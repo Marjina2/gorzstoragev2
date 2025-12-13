@@ -4,6 +4,12 @@
     "devCommand": "npm run dev",
     "installCommand": "npm install",
     "framework": "vite",
+    "crons": [
+        {
+            "path": "/api/cron/restore-timer",
+            "schedule": "0 * * * *"
+        }
+    ],
     "rewrites": [
         {
             "source": "/(.*)",

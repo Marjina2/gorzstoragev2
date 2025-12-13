@@ -107,7 +107,8 @@ const mockStore = {
   files: [] as any[],
   logs: [] as any[],
   folders: [] as any[],
-  shareLinks: [] as any[]
+  shareLinks: [] as any[],
+  restoreTimer: 1 // Hourly timer counter (1-10)
 };
 
 // Helper: Just return the regular supabase client
@@ -1219,9 +1220,82 @@ export const deleteExpiredTokens = async () => {
   }
 };
 
-export const updateRestoreTimer = async () => {
-  console.log("Restore timer updated");
+// --- RESTORE TIMER API ---
+
+export const getRestoreTimer = async (): Promise<number> => {
+  if (!USE_MOCK && supabase) {
+    const db = getSupabaseClient();
+    const { data, error } = await db
+      .from('restore_timer')
+      .select('counter')
+      .eq('id', 1)
+      .single();
+
+    if (error) {
+      console.error("Error fetching restore timer:", error);
+      return 1; // Default to 1 if error
+    }
+    return data?.counter || 1;
+  } else {
+    // Mock mode - use in-memory counter
+    if (!mockStore.restoreTimer) {
+      mockStore.restoreTimer = 1;
+    }
+    return mockStore.restoreTimer;
+  }
 };
+
+export const incrementRestoreTimer = async (): Promise<number> => {
+  if (!USE_MOCK && supabase) {
+    const db = getSupabaseClient();
+
+    // Get current counter value
+    const { data: currentData, error: fetchError } = await db
+      .from('restore_timer')
+      .select('counter')
+      .eq('id', 1)
+      .single();
+
+    if (fetchError) {
+      console.error("Error fetching current timer:", fetchError);
+      throw new Error("Failed to fetch restore timer: " + fetchError.message);
+    }
+
+    const currentCounter = currentData?.counter || 1;
+    // Increment and reset to 1 if it reaches 10
+    const newCounter = currentCounter >= 10 ? 1 : currentCounter + 1;
+
+    // Update the counter
+    const { error: updateError } = await db
+      .from('restore_timer')
+      .update({
+        counter: newCounter,
+        last_updated: new Date().toISOString()
+      })
+      .eq('id', 1);
+
+    if (updateError) {
+      console.error("Error updating restore timer:", updateError);
+      throw new Error("Failed to update restore timer: " + updateError.message);
+    }
+
+    console.log(`✅ Restore timer updated: ${currentCounter} → ${newCounter}`);
+    return newCounter;
+  } else {
+    // Mock mode
+    if (!mockStore.restoreTimer) {
+      mockStore.restoreTimer = 1;
+    }
+
+    const currentCounter = mockStore.restoreTimer;
+    const newCounter = currentCounter >= 10 ? 1 : currentCounter + 1;
+    mockStore.restoreTimer = newCounter;
+
+    console.log(`✅ [Mock] Restore timer updated: ${currentCounter} → ${newCounter}`);
+    return newCounter;
+  }
+};
+
 
 export const renameR2File = async (oldKey: string, newKey: string) => {
   if (!USE_MOCK && r2Client && R2_BUCKET_NAME) {

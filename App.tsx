@@ -13,7 +13,7 @@ import AdminDashboard from './app/admin/dashboard/page';
 
 const AnimatedRoutes = () => {
   const location = useLocation();
-  
+
   const element = useRoutes([
     { path: "/", element: <Home /> },
     { path: "/token", element: <Home /> },
@@ -35,9 +35,9 @@ const AnimatedRoutes = () => {
 const App: React.FC = () => {
   return (
     <Router>
-        <RootLayout>
-             <AnimatedRoutes />
-        </RootLayout>
+      <RootLayout>
+        <AnimatedRoutes />
+      </RootLayout>
     </Router>
   );
 };
