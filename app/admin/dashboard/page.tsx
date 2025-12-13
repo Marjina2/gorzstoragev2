@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from '../../../lib/use-router';
 import { GlassCard, NeoButton, NeoInput } from '../../../components/GlassUI';
-import { getAdminData, deleteFile, deleteToken, createCustomToken, updateFileMetadata, listAllR2Files, deleteR2File, getR2FileUrl, updateTokenMetadata, deleteExpiredTokens, updateRestoreTimer, createFolder, getFolders, assignTokenToFolder } from '../../../services/mockApi';
+import { getAdminData, deleteFile, deleteToken, createCustomToken, updateFileMetadata, listAllR2Files, deleteR2File, getR2FileUrl, updateTokenMetadata, deleteExpiredTokens, createFolder, getFolders, assignTokenToFolder } from '../../../services/mockApi';
 import { R2FileManager } from './R2FileManager';
 import { TokenRecord, FileRecord, ActivityLog, FolderRecord } from '../../../types';
 import {
@@ -114,12 +114,10 @@ export default function AdminDashboard() {
     // Set up intervals
     const dataFetchInterval = setInterval(() => fetchData(false), 10000); // Refresh data every 10 seconds
     const tokenCleanupInterval = setInterval(() => deleteExpiredTokens(), 5 * 60 * 1000); // Clean up expired tokens every 5 minutes
-    const restoreTimerInterval = setInterval(() => updateRestoreTimer(), 60 * 60 * 1000); // Update restore timer every hour
 
     return () => {
       clearInterval(dataFetchInterval);
       clearInterval(tokenCleanupInterval);
-      clearInterval(restoreTimerInterval);
     };
   }, []);
 
