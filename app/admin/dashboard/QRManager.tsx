@@ -118,6 +118,9 @@ export const QRManager: React.FC<QRManagerProps> = ({ folders, tokens }) => {
                                         <div className="text-white font-bold truncate px-2" title={link.folderName}>
                                             {link.folderName}
                                         </div>
+                                        <div className="text-[10px] text-gray-500 font-mono">
+                                            ID: {link.folder_id}
+                                        </div>
                                         <div className="text-xs text-gray-400 flex items-center justify-center gap-2">
                                             <span className={`px-1.5 py-0.5 rounded text-[10px] uppercase font-bold ${link.type === 'upload' ? 'bg-blue-500/20 text-blue-300' : 'bg-green-500/20 text-green-300'}`}>
                                                 {link.type}

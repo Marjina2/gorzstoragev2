@@ -325,6 +325,7 @@ export const downloadFolderAsZip = async (folderId: string, tokenStr: string): P
   });
 
   let successfulAdds = 0;
+  let lastError: Error | null = null;
 
   try {
     // Sequential processing to avoid concurrency issues and clearer logging
@@ -344,13 +345,17 @@ export const downloadFolderAsZip = async (folderId: string, tokenStr: string): P
         successfulAdds++;
         console.log(`Zipping: Added ${file.original_name}`);
 
-      } catch (error) {
+      } catch (error: any) {
         console.error(`Zipping: Error processing file ${file.original_name}:`, error);
+        lastError = error;
       }
     }
 
     if (successfulAdds === 0) {
-      throw new Error("Failed to add any files to the zip archive. Possible CORS or Network issue.");
+      if (lastError && lastError.message.includes("Download limit reached")) {
+        throw new Error("Download limit reached. You cannot download these files again.");
+      }
+      throw new Error(lastError ? lastError.message : "Failed to add any files to the zip archive. Possible CORS or Network issue.");
     }
 
   } finally {
@@ -474,6 +479,23 @@ export const assignTokenToFolder = async (tokenId: string, folderId: string) => 
       if (!token.allowed_folders.includes(folderId)) {
         token.allowed_folders.push(folderId);
       }
+    }
+  }
+};
+
+export const removeTokenFromFolder = async (tokenId: string, folderId: string) => {
+  if (!USE_MOCK && supabase) {
+    const db = getSupabaseClient();
+    const { data: token } = await db.from('tokens').select('allowed_folders').eq('id', tokenId).single();
+    const currentFolders = token?.allowed_folders || [];
+    if (currentFolders.includes(folderId)) {
+      const newFolders = currentFolders.filter((f: string) => f !== folderId);
+      await db.from('tokens').update({ allowed_folders: newFolders }).eq('id', tokenId);
+    }
+  } else {
+    const token = mockStore.tokens.find(t => t.id === tokenId);
+    if (token && token.allowed_folders) {
+      token.allowed_folders = token.allowed_folders.filter(f => f !== folderId);
     }
   }
 };
@@ -734,7 +756,15 @@ export const uploadFile = async (
 
   // 5. Save Metadata
   const effectiveExpiry = isMaster && expiryTime ? expiryTime : null;
-  const effectiveDownloadLimit = downloadLimit !== undefined && downloadLimit !== null ? downloadLimit : (tokenRecord.temp_purpose ? 1 : 10);
+
+  let effectiveDownloadLimit: number | null;
+  if (downloadLimit !== undefined && downloadLimit !== null) {
+    effectiveDownloadLimit = downloadLimit;
+  } else if (folderId) {
+    effectiveDownloadLimit = null; // Unlimited for folder uploads by default
+  } else {
+    effectiveDownloadLimit = tokenRecord.temp_purpose ? 1 : 10;
+  }
 
   const fileRecord: FileRecord = {
     file_id: fileId,

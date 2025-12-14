@@ -47,19 +47,19 @@ export default function Home() {
 
         {!generatedToken ? (
           <div className="space-y-6">
-            <NeoInput 
-              label="Identity Name" 
-              placeholder="Enter your alias" 
+            <NeoInput
+              label="Identity Name"
+              placeholder="Enter your alias"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-            <NeoInput 
-              label="Purpose (Optional)" 
-              placeholder="e.g. Project Alpha Assets" 
+            <NeoInput
+              label="Purpose (Optional)"
+              placeholder="e.g. Project Alpha Assets"
               value={purpose}
               onChange={(e) => setPurpose(e.target.value)}
             />
-            
+
             {error && (
               <div className="flex items-center gap-2 text-red-400 text-xs bg-red-900/10 p-3 rounded border border-red-500/20">
                 <ShieldAlert size={14} />
@@ -67,9 +67,9 @@ export default function Home() {
               </div>
             )}
 
-            <NeoButton 
-              className="w-full" 
-              onClick={handleGenerate} 
+            <NeoButton
+              className="w-full"
+              onClick={handleGenerate}
               isLoading={loading}
               disabled={!name}
             >
@@ -77,7 +77,7 @@ export default function Home() {
             </NeoButton>
           </div>
         ) : (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             className="text-center space-y-6"
@@ -100,9 +100,9 @@ export default function Home() {
         )}
 
         <div className="mt-8 pt-6 border-t border-white/5 flex justify-between text-xs text-gray-500 font-mono">
-           <button onClick={() => router.push('/upload')} className="relative px-4 py-2 rounded-lg bg-white/10 text-white transition-all duration-300 hover:bg-white/20 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)]">Upload</button>
-           <button onClick={() => router.push('/download')} className="relative px-4 py-2 rounded-lg bg-white/10 text-white transition-all duration-300 hover:bg-white/20 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)]">Download</button>
-           <button onClick={() => router.push('/admin')} className="relative px-4 py-2 rounded-lg bg-white/10 text-white transition-all duration-300 hover:bg-white/20 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)]">Admin</button>
+          <button onClick={() => router.push('/upload')} className="relative px-4 py-2 rounded-lg bg-white/10 text-white transition-all duration-300 hover:bg-white/20 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)]">Upload</button>
+          <button onClick={() => router.push('/download')} className="relative px-4 py-2 rounded-lg bg-white/10 text-white transition-all duration-300 hover:bg-white/20 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)]">Download</button>
+          <button onClick={() => router.push('/admin')} className="relative px-4 py-2 rounded-lg bg-white/10 text-white transition-all duration-300 hover:bg-white/20 hover:shadow-[0_0_15px_rgba(255,255,255,0.5)]">Admin</button>
         </div>
       </GlassCard>
     </div>

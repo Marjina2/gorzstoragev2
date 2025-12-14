@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from '../../../lib/use-router';
 import { GlassCard, NeoButton, NeoInput } from '../../../components/GlassUI';
-import { getAdminData, deleteFile, deleteToken, createCustomToken, updateFileMetadata, listAllR2Files, deleteR2File, getR2FileUrl, updateTokenMetadata, deleteExpiredTokens, createFolder, getFolders, assignTokenToFolder } from '../../../services/mockApi';
+import { getAdminData, deleteFile, deleteToken, createCustomToken, updateFileMetadata, listAllR2Files, deleteR2File, getR2FileUrl, updateTokenMetadata, deleteExpiredTokens, createFolder, getFolders, assignTokenToFolder, removeTokenFromFolder } from '../../../services/mockApi';
 import { R2FileManager } from './R2FileManager';
 import { TokenRecord, FileRecord, ActivityLog, FolderRecord } from '../../../types';
 import {
@@ -377,6 +377,17 @@ export default function AdminDashboard() {
     }
   };
 
+  const handleRemoveTokenFromFolder = async (tokenId: string, folderId: string) => {
+    if (window.confirm(`Remove access to folder "${folderId}" for this token?`)) {
+      try {
+        await removeTokenFromFolder(tokenId, folderId);
+        fetchData(false);
+      } catch (err: any) {
+        alert("Failed to remove token from folder: " + err.message);
+      }
+    }
+  };
+
   const TokenTable = () => (
     <div className="overflow-x-auto h-full pb-4">
       <table className="text-left text-sm font-mono">
@@ -472,9 +483,16 @@ export default function AdminDashboard() {
                 {t.allowed_folders && t.allowed_folders.length > 0 ? (
                   <div className="flex flex-wrap gap-1">
                     {t.allowed_folders.map(fid => (
-                      <span key={fid} className="px-1.5 py-0.5 bg-blue-900/50 text-blue-200 text-[10px] rounded border border-blue-500/30">
-                        {fid}
-                      </span>
+                      <div key={fid} className="flex items-center gap-1 px-1.5 py-0.5 bg-blue-900/50 text-blue-200 text-[10px] rounded border border-blue-500/30">
+                        <span>{fid}</span>
+                        <button
+                          onClick={() => handleRemoveTokenFromFolder(t.id, fid)}
+                          className="text-blue-300 hover:text-red-400 transition-colors px-1"
+                          title="Remove from Folder"
+                        >
+                          <X size={10} />
+                        </button>
+                      </div>
                     ))}
                   </div>
                 ) : (
