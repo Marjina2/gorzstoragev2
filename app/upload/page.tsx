@@ -99,8 +99,8 @@ export default function UploadPage() {
     const startTime = Date.now();
     let uploaded = 0;
 
-    // Simulate realistic upload speed (assume 20-40 Mbps average)
-    const simulatedSpeedBytesPerSec = (25 * 1024 * 1024) / 8; // 25 Mbps in bytes/sec
+    // Simulate realistic upload speed (tuned to avoid 95% stall - assume 10 Mbps average)
+    const simulatedSpeedBytesPerSec = (10 * 1024 * 1024) / 8; // 10 Mbps in bytes/sec
     const incrementBytes = simulatedSpeedBytesPerSec * 0.5; // Update every 500ms
 
     const interval = setInterval(() => {
@@ -172,29 +172,58 @@ export default function UploadPage() {
       const totalSize = filesToUpload.reduce((sum, file) => sum + file.size, 0);
       setTotalBytes(totalSize);
 
-      // Start progress simulation with callback to complete when upload finishes
-      const stopProgress = simulateProgress(totalSize, () => {
-        console.log("Progress simulation completed");
-      });
+      // Tracking for progress
+      const progressMap = new Map<number, number>(); // Index -> Bytes Loaded
 
-      try {
-        for (const file of filesToUpload) {
-          const result = await uploadFile(
-            file,
-            token,
-            clientIp, // Pass fetched IP
-            fileTitle,
-            currentCollectionId,
-            downloadLimit,
-            finalExpiryTime,
-            folderId || null,
-            navigator.userAgent // Pass User Agent
-          );
-          lastUploadedFileId = result.file_id;
+      const updateProgress = () => {
+        let loaded = 0;
+        progressMap.forEach((bytes) => loaded += bytes);
+
+        setUploadedBytes(loaded);
+        if (totalSize > 0) {
+          setUploadProgress((loaded / totalSize) * 100);
         }
 
-        // Upload complete - finish the progress
-        stopProgress();
+        // Simple speed estimation (total / time)
+        const elapsed = (Date.now() - startTime) / 1000;
+        if (elapsed > 0) setUploadSpeed(loaded / elapsed);
+      };
+
+      const startTime = Date.now();
+
+      try {
+        // PARALLEL UPLOAD (Optimize Speed)
+        const BATCH_SIZE = 10;
+
+        for (let i = 0; i < filesToUpload.length; i += BATCH_SIZE) {
+          const batch = filesToUpload.slice(i, i + BATCH_SIZE);
+
+          await Promise.all(batch.map(async (file, batchIndex) => {
+            const globalIndex = i + batchIndex;
+
+            const result = await uploadFile(
+              file,
+              token,
+              clientIp,
+              fileTitle,
+              currentCollectionId,
+              downloadLimit,
+              finalExpiryTime,
+              folderId || null,
+              navigator.userAgent,
+              (bytesLoaded) => {
+                progressMap.set(globalIndex, bytesLoaded);
+                updateProgress();
+              }
+            );
+            // We just need one ID for reference
+            lastUploadedFileId = result.file_id;
+
+            // Ensure 100% for this file on completion
+            progressMap.set(globalIndex, file.size);
+            updateProgress();
+          }));
+        }
 
         console.log("Last uploaded file ID:", lastUploadedFileId);
         setStatus('success');
@@ -370,30 +399,50 @@ export default function UploadPage() {
                     </button>
                   </>
                 ) : (
-                  <div className="w-full h-full flex flex-col items-center justify-center relative p-4 overflow-y-auto custom-scrollbar">
-                    <h3 className="text-white/80 text-lg mb-3">Selected Files:</h3>
-                    <ul className="space-y-2 w-full">
-                      {files.map((file, index) => (
-                        <li key={index} className="flex items-center justify-between bg-white/5 p-2 rounded-md">
-                          <div className="flex items-center gap-2">
-                            <FileIcon size={20} className="text-white" />
-                            <span className="text-sm font-mono truncate">{file.name}</span>
+                  <div className="w-full h-full flex flex-col relative p-4 overflow-hidden">
+                    <div className="flex justify-between items-center mb-3">
+                      <h3 className="text-white/80 text-sm font-bold uppercase tracking-wider">Selected Files ({files.length})</h3>
+                      <button
+                        onClick={() => setFiles([])}
+                        className="text-xs text-red-400 hover:text-red-300 transition-colors uppercase tracking-wider"
+                      >
+                        Clear All
+                      </button>
+                    </div>
+
+                    <div className="flex-1 overflow-y-auto custom-scrollbar -mr-2 pr-2 max-h-[180px] md:max-h-[300px]">
+                      <div className="grid grid-cols-1 gap-2 pb-2">
+                        {files.map((file, index) => (
+                          <div key={index} className="flex items-center justify-between bg-white/5 hover:bg-white/10 p-2 rounded-md border border-white/5 transition-colors group">
+                            <div className="flex items-center gap-2 overflow-hidden">
+                              <div className="w-8 h-8 rounded bg-black/20 flex items-center justify-center flex-shrink-0 text-blue-400">
+                                <FileIcon size={16} />
+                              </div>
+                              <div className="flex flex-col min-w-0">
+                                <span className="text-xs text-gray-200 font-medium truncate w-full" title={file.name}>{file.name}</span>
+                                <span className="text-[10px] text-gray-500 font-mono">{(file.size / 1024 / 1024).toFixed(2)} MB</span>
+                              </div>
+                            </div>
+                            <button
+                              onClick={() => setFiles(files.filter((_, i) => i !== index))}
+                              className="p-1.5 text-gray-500 hover:text-red-400 hover:bg-red-500/10 rounded transition-all opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
+                            >
+                              <X size={14} />
+                            </button>
                           </div>
-                          <button
-                            onClick={() => setFiles(files.filter((_, i) => i !== index))}
-                            className="p-1 text-gray-500 hover:text-red-400 transition-colors"
-                          >
-                            <X size={16} />
-                          </button>
-                        </li>
-                      ))}
-                    </ul>
-                    <button
-                      onClick={() => setFiles([])}
-                      className="mt-4 text-xs uppercase tracking-wider border-b border-white/30 pb-0.5 hover:text-white hover:border-white transition-colors"
-                    >
-                      Clear All
-                    </button>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="mt-3 pt-3 border-t border-white/5 flex justify-between items-center text-xs text-gray-500 font-mono">
+                      <span>Total Size: {(files.reduce((acc, f) => acc + f.size, 0) / 1024 / 1024).toFixed(2)} MB</span>
+                      <button
+                        onClick={() => fileInputRef.current?.click()}
+                        className="text-white hover:text-blue-400 transition-colors flex items-center gap-1"
+                      >
+                        <Upload size={12} /> Add More
+                      </button>
+                    </div>
                   </div>
                 )}
                 <input

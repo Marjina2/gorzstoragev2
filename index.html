@@ -20,19 +20,34 @@
         font-family: 'JetBrains Mono', monospace;
       }
       /* Custom Scrollbar for Admin Tables */
+      /* Custom Scrollbar */
       ::-webkit-scrollbar {
-        width: 6px;
-        height: 6px;
+        width: 4px;
+        height: 4px;
       }
       ::-webkit-scrollbar-track {
-        background: #000; 
+        background: transparent; 
       }
       ::-webkit-scrollbar-thumb {
         background: #333; 
-        border-radius: 3px;
+        border-radius: 2px;
       }
       ::-webkit-scrollbar-thumb:hover {
         background: #555; 
+      }
+      
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.4);
       }
     </style>
   <script type="importmap">

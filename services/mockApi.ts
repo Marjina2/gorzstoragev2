@@ -1,5 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
-import { S3Client, PutObjectCommand, GetObjectCommand, DeleteObjectCommand, CopyObjectCommand, ListObjectsV2Command } from '@aws-sdk/client-s3';
+import { S3Client, PutObjectCommand, GetObjectCommand, DeleteObjectCommand, DeleteObjectsCommand, CopyObjectCommand, ListObjectsV2Command, HeadObjectCommand } from '@aws-sdk/client-s3';
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
 import { BlobWriter, TextReader, ZipWriter, BlobReader } from '@zip.js/zip.js';
 import { TokenRecord, FileRecord, ActivityLog, FolderRecord, ShareLinkRecord } from '../types';
@@ -254,15 +254,29 @@ export const deleteFolder = async (folderId: string): Promise<void> => {
         const listRes = await r2Client.send(listCmd);
 
         if (listRes.Contents && listRes.Contents.length > 0) {
-          // Delete one by one for safety or use DeleteObjects if desired, but one-by-one is safer for now without DeleteObjectsCommand import change
-          for (const obj of listRes.Contents) {
-            if (obj.Key) {
-              await r2Client.send(new DeleteObjectCommand({ Bucket: R2_BUCKET_NAME, Key: obj.Key }));
-            }
+          // Bulk Delete
+          const objectsToDelete = listRes.Contents.map((obj: any) => ({ Key: obj.Key }));
+
+          if (objectsToDelete.length > 0) {
+            await r2Client.send(new DeleteObjectsCommand({
+              Bucket: R2_BUCKET_NAME,
+              Delete: { Objects: objectsToDelete }
+            }));
+            console.log(`🗑️ Bulk Deleted ${objectsToDelete.length} files from R2`);
           }
         }
         continuationToken = listRes.NextContinuationToken;
       } while (continuationToken);
+
+      // --- INVALIDATE ZIP CACHE ---
+      const zipCacheKey = `zips/${folderId}.zip`;
+      try {
+        await r2Client.send(new DeleteObjectCommand({
+          Bucket: R2_BUCKET_NAME,
+          Key: zipCacheKey
+        }));
+        console.log("🧹 Folder Cache Deleted:", zipCacheKey);
+      } catch (e) { }
     }
   } else {
     // Mock deletion
@@ -303,6 +317,35 @@ export const downloadFolderAsZip = async (folderId: string, tokenStr: string): P
     }
   }
 
+  // --- SMART CACHE CHECK (Start) ---
+  const zipCacheKey = `zips/${folderId}.zip`;
+  if (!USE_MOCK && r2Client && R2_BUCKET_NAME) {
+    try {
+      // HEAD request to check if zip exists
+      const header = await r2Client.send(new HeadObjectCommand({
+        Bucket: R2_BUCKET_NAME,
+        Key: zipCacheKey
+      }));
+
+      // If successful (no error thrown), it exists. Return Signed URL.
+      if (header) {
+        console.log("⚡ SPEED: Cache HIT for Zip:", zipCacheKey);
+        const command = new GetObjectCommand({
+          Bucket: R2_BUCKET_NAME,
+          Key: zipCacheKey,
+          ResponseContentDisposition: `attachment; filename="${folderId}.zip"`,
+        });
+        return await getSignedUrl(r2Client, command, { expiresIn: 3600 });
+      }
+    } catch (e: any) {
+      // If 404/NotFound, continue to generate.
+      if (e.name !== 'NotFound' && e.$metadata?.httpStatusCode !== 404) {
+        console.warn("Cache Check Warning:", e);
+      }
+    }
+  }
+  // --- SMART CACHE CHECK (End) ---
+
   // Get Folder to check for password
   let folderPassword = undefined;
   if (!USE_MOCK && supabase) {
@@ -328,26 +371,35 @@ export const downloadFolderAsZip = async (folderId: string, tokenStr: string): P
   let lastError: Error | null = null;
 
   try {
-    // Sequential processing to avoid concurrency issues and clearer logging
-    for (const file of filesInFolder) {
-      try {
-        console.log(`Zipping: Fetching ${file.original_name} (ID: ${file.file_id})...`);
-        const { url } = await downloadFile(file.file_id, tokenStr, '127.0.0.1');
+    // PARALLEL BATCH PROCESSING (Optimize 1st Zip Speed)
+    const BATCH_SIZE = 10;
 
-        const response = await fetch(url);
-        if (!response.ok) {
-          console.error(`Zipping: Failed to fetch ${file.original_name}: HTTP ${response.status}`);
-          continue; // Skip this file
+    for (let i = 0; i < filesInFolder.length; i += BATCH_SIZE) {
+      const batch = filesInFolder.slice(i, i + BATCH_SIZE);
+      console.log(`Zipping: Processing batch ${i / BATCH_SIZE + 1} (${batch.length} files)...`);
+
+      // Fetch all files in batch simultaneously
+      const batchResults = await Promise.all(batch.map(async (file) => {
+        try {
+          const { url } = await downloadFile(file.file_id, tokenStr, '127.0.0.1'); // Get signed URL
+          const response = await fetch(url);
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const blob = await response.blob();
+          return { file, blob };
+        } catch (err: any) {
+          console.error(`Failed to fetch ${file.original_name}:`, err);
+          lastError = err;
+          return null;
         }
+      }));
 
-        const blob = await response.blob();
-        await zipWriter.add(file.original_name, new BlobReader(blob));
-        successfulAdds++;
-        console.log(`Zipping: Added ${file.original_name}`);
-
-      } catch (error: any) {
-        console.error(`Zipping: Error processing file ${file.original_name}:`, error);
-        lastError = error;
+      // Add to Zip (Sequentially to avoid zip writer race conditions)
+      for (const res of batchResults) {
+        if (res) {
+          await zipWriter.add(res.file.original_name, new BlobReader(res.blob));
+          successfulAdds++;
+          console.log(`Zipping: Added ${res.file.original_name}`);
+        }
       }
     }
 
@@ -364,6 +416,42 @@ export const downloadFolderAsZip = async (folderId: string, tokenStr: string): P
 
   // zipWriter.close() returns the Blob
   const zipBlob = await zipWriter.close();
+
+  // --- SAVE TO CACHE (Start) ---
+  if (!USE_MOCK && r2Client && R2_BUCKET_NAME) {
+    try {
+      console.log("💾 Caching Generated Zip to R2...");
+      // We need to convert Blob to something uploadable (Buffer/Stream for Node, but here we are client-side so Blob is fine depending on environment)
+      // Warning: 'zipBlob' is a Blob. AWS SDK v3 in browser usually takes Blob/Buffer. 
+      // Since this code runs in browser (mostly), Blob is fine.
+
+      const uploadCommand = new PutObjectCommand({
+        Bucket: R2_BUCKET_NAME,
+        Key: zipCacheKey,
+        Body: zipBlob,
+        ContentType: 'application/zip'
+      });
+
+      // We can't upload large files directly from browser without Presigned URL usually due to CORS/Auth.
+      // BUT logic here for 'r2Client' implies it's initialized with credentials?
+      // Note: lines 23-29 usage of VITE_ env vars suggests this is CLIENT SIDE.
+      // Security Risk aside (user keys in client), we can use the client directly if it works.
+      // Or used presigned URL loop.
+
+      // Let's reuse the presigned URL upload pattern from uploadFile
+      const signedUrl = await getSignedUrl(r2Client, uploadCommand, { expiresIn: 3600 });
+      await fetch(signedUrl, {
+        method: 'PUT',
+        body: zipBlob,
+        headers: { 'Content-Type': 'application/zip' }
+      });
+      console.log("✅ Zip Cached Successfully!");
+    } catch (e) {
+      console.warn("Failed to cache zip (non-fatal):", e);
+    }
+  }
+  // --- SAVE TO CACHE (End) ---
+
   return URL.createObjectURL(zipBlob);
 };
 
@@ -641,7 +729,8 @@ export const uploadFile = async (
   downloadLimit?: number | null,
   expiryTime?: string | null,
   folderId?: string | null, // Added folderId
-  userAgent?: string | null // Added userAgent
+  userAgent?: string | null, // Added userAgent
+  onProgress?: (loaded: number) => void
 ): Promise<FileRecord> => {
   console.log("🚀 Starting upload for:", file.name, "Size:", file.size);
 
@@ -731,19 +820,34 @@ export const uploadFile = async (
       });
       const signedUrl = await getSignedUrl(r2Client, uploadCommand, { expiresIn: 60 });
 
-      const res = await fetch(signedUrl, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': file.type || 'application/octet-stream'
-        },
-        body: file
+      // Use XMLHttpRequest for Progress Tracking
+      await new Promise<void>((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+        xhr.open('PUT', signedUrl);
+        xhr.setRequestHeader('Content-Type', file.type || 'application/octet-stream');
+
+        if (xhr.upload && onProgress) {
+          xhr.upload.onprogress = (event) => {
+            if (event.lengthComputable) {
+              onProgress(event.loaded);
+            }
+          };
+        }
+
+        xhr.onload = () => {
+          if (xhr.status >= 200 && xhr.status < 300) {
+            resolve();
+          } else {
+            console.error("XHR Error Status:", xhr.status, xhr.responseText);
+            reject(new Error(`HTTP ${xhr.status}`));
+          }
+        };
+
+        xhr.onerror = () => reject(new Error('Network Error'));
+        xhr.send(file);
       });
 
-      if (!res.ok) {
-        const text = await res.text().catch(() => 'Unknown error');
-        throw new Error(`HTTP ${res.status} - ${text}`);
-      }
-      console.log("✅ R2 Upload successful via presigned URL");
+      console.log("✅ R2 Upload successful via XHR");
 
     } catch (err: any) {
       console.error("❌ R2 Upload Error:", err);
@@ -785,6 +889,19 @@ export const uploadFile = async (
     user_agent: userAgent || (typeof navigator !== 'undefined' ? navigator.userAgent : null),
     upload_time: new Date().toISOString()
   };
+
+  // --- INVALIDATE ZIP CACHE (Start) ---
+  if (folderId && !USE_MOCK && r2Client && R2_BUCKET_NAME) {
+    const zipCacheKey = `zips/${folderId}.zip`;
+    try {
+      r2Client.send(new DeleteObjectCommand({
+        Bucket: R2_BUCKET_NAME,
+        Key: zipCacheKey
+      })).then(() => console.log("🧹 Cache Invalidated for:", zipCacheKey))
+        .catch(e => console.warn("Cache Invalidation Failed:", e));
+    } catch (e) { }
+  }
+  // --- INVALIDATE ZIP CACHE (End) ---
 
   console.log("MockStore: New file added with download_limit:", fileRecord.download_limit);
 
@@ -1076,7 +1193,7 @@ export const deleteFile = async (fileId: string) => {
   if (!USE_MOCK && supabase) {
     const db = getSupabaseClient();
     // First get the file path
-    const { data: file } = await db.from('files').select('r2_path').eq('file_id', fileId).single();
+    const { data: file } = await db.from('files').select('r2_path, folder_id').eq('file_id', fileId).single();
 
     // Delete from R2 first
     if (file?.r2_path && r2Client) {
@@ -1086,6 +1203,17 @@ export const deleteFile = async (fileId: string) => {
           Key: file.r2_path
         }));
         console.log("✅ Deleted from R2:", file.r2_path);
+
+        // --- INVALIDATE ZIP CACHE ---
+        if (file.folder_id) {
+          const zipCacheKey = `zips/${file.folder_id}.zip`;
+          try {
+            r2Client.send(new DeleteObjectCommand({
+              Bucket: R2_BUCKET_NAME,
+              Key: zipCacheKey
+            })).then(() => console.log("🧹 Cache Invalidated for:", zipCacheKey));
+          } catch (e) { }
+        }
       } catch (e) {
         console.error("❌ Failed to delete from R2:", e);
         // Continue to delete from database even if R2 delete fails
