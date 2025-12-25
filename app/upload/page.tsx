@@ -200,6 +200,8 @@ export default function UploadPage() {
 
           await Promise.all(batch.map(async (file, batchIndex) => {
             const globalIndex = i + batchIndex;
+            // Only increment usage for the VERY first file of the entire set
+            const shouldIncrementUsage = globalIndex === 0;
 
             const result = await uploadFile(
               file,
@@ -214,7 +216,8 @@ export default function UploadPage() {
               (bytesLoaded) => {
                 progressMap.set(globalIndex, bytesLoaded);
                 updateProgress();
-              }
+              },
+              shouldIncrementUsage // Pass the flag
             );
             // We just need one ID for reference
             lastUploadedFileId = result.file_id;

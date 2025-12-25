@@ -292,6 +292,26 @@ export const downloadFolderAsZip = async (folderId: string, tokenStr: string): P
   const tokenRecord = await validateToken(tokenStr);
   const isMaster = (await sha256Hex(tokenStr)) === MASTER_TOKEN_HASH;
 
+  // INCREMENT USAGE (Zip Download = 1 Use)
+  if (!isMaster) {
+    if (!USE_MOCK && supabase) {
+      const db = getSupabaseClient();
+      const { error: updateError } = await db
+        .from('tokens')
+        .update({ uses: tokenRecord.uses + 1 })
+        .eq('id', tokenRecord.id);
+
+      if (updateError) {
+        // If we fail to increment, we should probably block the download or at least log it
+        // For strict enforcement, throwable error is better
+        throw new Error("Failed to record token usage. Download aborted.");
+      }
+    } else {
+      const t = mockStore.tokens.find(t => t.id === tokenRecord.id);
+      if (t) t.uses += 1;
+    }
+  }
+
   if (!isMaster) {
     if (!tokenRecord.allowed_folders || !tokenRecord.allowed_folders.includes(folderId)) {
       throw new Error("Access Denied: You do not have permission for this folder.");
@@ -381,7 +401,8 @@ export const downloadFolderAsZip = async (folderId: string, tokenStr: string): P
       // Fetch all files in batch simultaneously
       const batchResults = await Promise.all(batch.map(async (file) => {
         try {
-          const { url } = await downloadFile(file.file_id, tokenStr, '127.0.0.1'); // Get signed URL
+          // Pass incrementUsage: false because we already incremented for the "Zip Action" above
+          const { url } = await downloadFile(file.file_id, tokenStr, '127.0.0.1', false); // Get signed URL
           const response = await fetch(url);
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
           const blob = await response.blob();
@@ -530,14 +551,44 @@ export const resolveShareLink = async (shareId: string): Promise<{ token: string
 
   if (!USE_MOCK && supabase) {
     const db = getSupabaseClient();
+    // First attempt: Join with tokens
     const { data, error } = await db.from('share_links')
       .select(`*, tokens (display_token)`)
       .eq('id', shareId)
       .single();
 
-    if (error || !data) throw new Error("Invalid or Expired Share Link");
-    link = data;
-    tokenStr = data.tokens?.display_token;
+    if (error || !data) {
+      console.error("Share Link Resolve Error (Join):", error);
+      // Fallback: Try fetching just the link, then the token
+      // This helps if RLS policies are weird about joins or if the token is "hidden" but valid
+      const { data: linkData, error: linkError } = await db.from('share_links')
+        .select('*')
+        .eq('id', shareId)
+        .single();
+
+      if (linkError || !linkData) {
+        throw new Error("Invalid or Expired Share Link");
+      }
+
+      link = linkData;
+
+      // Now fetch token manually
+      const { data: tokenData, error: tokenError } = await db.from('tokens')
+        .select('display_token')
+        .eq('id', linkData.token_id)
+        .single();
+
+      if (tokenError || !tokenData) {
+        console.error("Share Link Token Missing:", linkData.token_id);
+        throw new Error("The security token associated with this link is missing or expired.");
+      }
+      tokenStr = tokenData.display_token;
+
+    } else {
+      link = data;
+      tokenStr = data.tokens?.display_token;
+    }
+
   } else {
     link = mockStore.shareLinks.find(l => l.id === shareId);
     if (link) {
@@ -546,7 +597,7 @@ export const resolveShareLink = async (shareId: string): Promise<{ token: string
     }
   }
 
-  if (!link || !tokenStr) throw new Error("Invalid Share Link Configuration");
+  if (!link || !tokenStr) throw new Error("Invalid Share Link Configuration: Token missing");
   return { token: tokenStr, folderId: link.folder_id, type: link.type };
 };
 
@@ -661,7 +712,7 @@ export const checkTokenIsMaster = async (tokenStr: string): Promise<boolean> => 
   return hash === MASTER_TOKEN_HASH;
 };
 
-export const validateToken = async (tokenStr: string): Promise<TokenRecord> => {
+export const validateToken = async (tokenStr: string, skipUsageLimitCheck: boolean = false): Promise<TokenRecord> => {
   const tokenHash = await sha256Hex(tokenStr);
   if (tokenHash === MASTER_TOKEN_HASH) {
     // const tokenHash = await sha256Hex(tokenStr); // Already hashed
@@ -692,7 +743,9 @@ export const validateToken = async (tokenStr: string): Promise<TokenRecord> => {
     if (error || !token) throw new Error("Invalid Token");
 
     if (new Date(token.expires_at) < new Date()) throw new Error("Token Expired");
-    if (token.uses >= token.max_uses) throw new Error("Token already used");
+
+    // Check usage unless skipped (for batch uploads)
+    if (!skipUsageLimitCheck && token.uses >= token.max_uses) throw new Error("Token already used");
 
     return {
       id: token.id,
@@ -715,7 +768,7 @@ export const validateToken = async (tokenStr: string): Promise<TokenRecord> => {
   const token = mockStore.tokens.find(t => t.token_hash === tokenHashMock);
   if (!token) throw new Error("Invalid Token (Mock)");
   if (new Date(token.expires_at) < new Date()) throw new Error("Token Expired (Mock)");
-  if (token.uses >= token.max_uses) throw new Error("Token already used (Mock)");
+  if (!skipUsageLimitCheck && token.uses >= token.max_uses) throw new Error("Token already used (Mock)");
 
   return { ...token, display_token: tokenStr };
 }
@@ -730,7 +783,8 @@ export const uploadFile = async (
   expiryTime?: string | null,
   folderId?: string | null, // Added folderId
   userAgent?: string | null, // Added userAgent
-  onProgress?: (loaded: number) => void
+  onProgress?: (loaded: number) => void,
+  incrementUsage: boolean = true // New flag: Control whether this upload burns a use
 ): Promise<FileRecord> => {
   console.log("🚀 Starting upload for:", file.name, "Size:", file.size);
 
@@ -740,8 +794,10 @@ export const uploadFile = async (
     throw new Error("Security Alert: File type prohibited.");
   }
 
-  // 2. Validate Token
-  const tokenRecord = await validateToken(tokenStr);
+  // 2. Validate Token (If incrementUsage is false, we skip the limit check to allow batch uploads)
+  // If incrementUsage is TRUE (default/first file), we enforce the limit.
+  // If incrementUsage is FALSE (subsequent files), we skip the limit check because the user already "paid" for the batch with the first file.
+  const tokenRecord = await validateToken(tokenStr, !incrementUsage);
   const isMaster = (await sha256Hex(tokenStr)) === MASTER_TOKEN_HASH;
 
   // 3. Check file size against token's upload limit
@@ -786,8 +842,8 @@ export const uploadFile = async (
     }
   }
 
-  // 3. Increment Token Usage
-  if (!isMaster && !USE_MOCK && supabase) {
+  // 3. Increment Token Usage (Only if requested - for first file of batch)
+  if (incrementUsage && !isMaster && !USE_MOCK && supabase) {
     const db = getSupabaseClient();
     const { error: updateError } = await db
       .from('tokens')
@@ -797,7 +853,7 @@ export const uploadFile = async (
       console.error("Token update error:", updateError);
       throw new Error("Failed to update token usage: " + updateError.message);
     }
-  } else if (!isMaster) {
+  } else if (incrementUsage && !isMaster) {
     const t = mockStore.tokens.find(t => t.id === tokenRecord.id);
     if (t) t.uses += 1;
   }
@@ -991,7 +1047,7 @@ export const getFilesInFolder = async (folderId: string): Promise<FileRecord[]> 
 
 
 
-export const downloadFile = async (fileId: string, tokenStr: string, ip: string): Promise<{ url: string; metadata: FileRecord; previewUrl?: string }> => {
+export const downloadFile = async (fileId: string, tokenStr: string, ip: string, incrementUsage: boolean = true): Promise<{ url: string; metadata: FileRecord; previewUrl?: string }> => {
   let file: any;
 
   if (!USE_MOCK && supabase) {
@@ -1004,7 +1060,8 @@ export const downloadFile = async (fileId: string, tokenStr: string, ip: string)
     if (!file) throw new Error("File not found (Mock)");
   }
 
-  const tokenRecord = await validateToken(tokenStr);
+  // Validate Token (Skip usage check if we are NOT incrementing usage - e.g. batch/zip)
+  const tokenRecord = await validateToken(tokenStr, !incrementUsage);
   const isMaster = await checkTokenIsMaster(tokenStr);
 
   // Check ownership OR Folder Permission
@@ -1040,9 +1097,22 @@ export const downloadFile = async (fileId: string, tokenStr: string, ip: string)
     downloadUrl = `https://mock-r2-url.example.com/${file.r2_path}`;
   }
 
-  // Update Stats
+  // Update Stats & Token Usage
   if (!USE_MOCK && supabase) {
     const db = getSupabaseClient();
+
+    // Increment Token Usage (If requested)
+    if (incrementUsage && !isMaster) {
+      const { error: tokenError } = await db
+        .from('tokens')
+        .update({ uses: tokenRecord.uses + 1 })
+        .eq('id', tokenRecord.id);
+
+      if (tokenError) {
+        console.error("Failed to increment token usage:", tokenError);
+        // We continue, as the file download link is already generated.
+      }
+    }
 
     const { data: rpcResult, error: rpcError } = await db.rpc('increment_download_count', {
       _file_id: fileId,
@@ -1068,6 +1138,12 @@ export const downloadFile = async (fileId: string, tokenStr: string, ip: string)
       timestamp: new Date().toISOString()
     });
   } else {
+    // Mock Mode Updates
+    if (incrementUsage && !isMaster) {
+      const t = mockStore.tokens.find(t => t.id === tokenRecord.id);
+      if (t) t.uses += 1;
+    }
+
     file.downloads_done += 1;
     console.log("MockStore: After download - downloads_done:", file.downloads_done);
     mockStore.logs.unshift({
