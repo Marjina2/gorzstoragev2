@@ -1,0 +1,1059 @@
+client:789 [vite] connecting...
+mockApi.ts:63 ✅ Supabase initialized with anon key
+mockApi.ts:64 💡 Make sure you ran the GRANT statements for anon role
+mockApi.ts:95 ✅ R2 Client initialized successfully
+mockApi.ts:104 Initializing mockStore...
+:3000/#/download?shareId=9300084a-a06d-464e-a96c-d33ca25da64d:1 [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) <input class=​"w-full bg-black/​40 border border-white/​10 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:​outline-none focus:​border-white/​40 focus:​ring-1 focus:​ring-white/​40 transition-all font-mono text-sm pl-12" placeholder=​"SECURITY TOKEN" type=​"password" value>​
+content.js:2 Source Links & Tech Stack Detector Content Script loaded
+:3000/#/download?shareId=9300084a-a06d-464e-a96c-d33ca25da64d:1 Denying load of chrome-extension://ehlmcdkjnabdaengcdbggjigilpggpho/rules.json. Resources must be listed in the web_accessible_resources manifest key in order to be loaded by pages outside the extension.Understand this error
+reminderPopup.js:1 Uncaught SyntaxError: Identifier 'style' has already been declared (at reminderPopup.js:1:1)Understand this error
+sticky-content.js:1 Uncaught SyntaxError: Identifier 'observer' has already been declared (at sticky-content.js:1:1)Understand this error
+zapper-content.js:1 Uncaught SyntaxError: Identifier 'observer' has already been declared (at zapper-content.js:1:1)Understand this error
+client:912 [vite] connected.
+translate-content.js:32 Translate Tool: Init Features {currency: {…}, lastTab: 'text', page: {…}, text: {…}}
+content.js:148  GET chrome-extension://invalid/ net::ERR_FAILED
+(anonymous) @ content.js:148Understand this error
+content.js:155 Failed to load detection rules: TypeError: Failed to fetch
+    at content.js:148:1
+(anonymous) @ content.js:155
+Promise.catch
+(anonymous) @ content.js:154Understand this error
+:3000/#/download?shareId=9300084a-a06d-464e-a96c-d33ca25da64d:1 Error handling response: TypeError: Cannot read properties of undefined (reading 'attributes')
+    at chrome-extension://ehlmcdkjnabdaengcdbggjigilpggpho/virusScanner-content.js:24:41Understand this error
+main.js?attr=1itEHTukl1q4TAwbspg6gPyabR9t2Io-d-josNA3XSKp6GYM0tUUWEH4GeWzuuHX:3478  HEAD https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/zips/UL3IIU.zip 404 (Not Found)
+fetchCallImpl @ main.js?attr=1itEHTukl1q4TAwbspg6gPyabR9t2Io-d-josNA3XSKp6GYM0tUUWEH4GeWzuuHX:3478
+fetch @ main.js?attr=1itEHTukl1q4TAwbspg6gPyabR9t2Io-d-josNA3XSKp6GYM0tUUWEH4GeWzuuHX:3484
+handle @ chunk-43J2MTQV.js?v=697e3f61:895
+await in handle
+(anonymous) @ chunk-43J2MTQV.js?v=697e3f61:380
+(anonymous) @ chunk-43J2MTQV.js?v=697e3f61:2689
+(anonymous) @ @aws-sdk_client-s3.js?v=697e3f61:6162
+await in (anonymous)
+(anonymous) @ @aws-sdk_client-s3.js?v=697e3f61:7413
+await in (anonymous)
+(anonymous) @ @aws-sdk_client-s3.js?v=697e3f61:6967
+await in (anonymous)
+(anonymous) @ @aws-sdk_client-s3.js?v=697e3f61:5983
+(anonymous) @ @aws-sdk_client-s3.js?v=697e3f61:5917
+(anonymous) @ chunk-43J2MTQV.js?v=697e3f61:1779
+(anonymous) @ @aws-sdk_client-s3.js?v=697e3f61:5881
+(anonymous) @ @aws-sdk_client-s3.js?v=697e3f61:7067
+(anonymous) @ chunk-43J2MTQV.js?v=697e3f61:2721
+await in (anonymous)
+(anonymous) @ chunk-43J2MTQV.js?v=697e3f61:2776
+await in (anonymous)
+(anonymous) @ chunk-43J2MTQV.js?v=697e3f61:1688
+await in (anonymous)
+(anonymous) @ @aws-sdk_client-s3.js?v=697e3f61:21040
+(anonymous) @ chunk-43J2MTQV.js?v=697e3f61:1711
+(anonymous) @ chunk-43J2MTQV.js?v=697e3f61:2505
+(anonymous) @ @aws-sdk_client-s3.js?v=697e3f61:5936
+send @ chunk-43J2MTQV.js?v=697e3f61:288
+downloadFolderAsZip @ mockApi.ts:349
+await in downloadFolderAsZip
+handleDownload @ page.tsx:78
+executeDispatch @ react-dom_client.js?v=697e3f61:13622
+runWithFiberInDEV @ react-dom_client.js?v=697e3f61:997
+processDispatchQueue @ react-dom_client.js?v=697e3f61:13658
+(anonymous) @ react-dom_client.js?v=697e3f61:14071
+batchedUpdates$1 @ react-dom_client.js?v=697e3f61:2626
+dispatchEventForPluginEventSystem @ react-dom_client.js?v=697e3f61:13763
+dispatchEvent @ react-dom_client.js?v=697e3f61:16784
+dispatchDiscreteEvent @ react-dom_client.js?v=697e3f61:16765
+<button>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=697e3f61:247
+NeoButton @ GlassUI.tsx:58
+react_stack_bottom_frame @ react-dom_client.js?v=697e3f61:18509
+renderWithHooksAgain @ react-dom_client.js?v=697e3f61:5729
+renderWithHooks @ react-dom_client.js?v=697e3f61:5665
+updateFunctionComponent @ react-dom_client.js?v=697e3f61:7475
+beginWork @ react-dom_client.js?v=697e3f61:8525
+runWithFiberInDEV @ react-dom_client.js?v=697e3f61:997
+performUnitOfWork @ react-dom_client.js?v=697e3f61:12561
+workLoopSync @ react-dom_client.js?v=697e3f61:12424
+renderRootSync @ react-dom_client.js?v=697e3f61:12408
+performWorkOnRoot @ react-dom_client.js?v=697e3f61:11766
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=697e3f61:13505
+performWorkUntilDeadline @ react-dom_client.js?v=697e3f61:36
+<NeoButton>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=697e3f61:247
+DownloadPage @ page.tsx:220
+react_stack_bottom_frame @ react-dom_client.js?v=697e3f61:18509
+renderWithHooksAgain @ react-dom_client.js?v=697e3f61:5729
+renderWithHooks @ react-dom_client.js?v=697e3f61:5665
+updateFunctionComponent @ react-dom_client.js?v=697e3f61:7475
+beginWork @ react-dom_client.js?v=697e3f61:8525
+runWithFiberInDEV @ react-dom_client.js?v=697e3f61:997
+performUnitOfWork @ react-dom_client.js?v=697e3f61:12561
+workLoopSync @ react-dom_client.js?v=697e3f61:12424
+renderRootSync @ react-dom_client.js?v=697e3f61:12408
+performWorkOnRoot @ react-dom_client.js?v=697e3f61:11766
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=697e3f61:13505
+performWorkUntilDeadline @ react-dom_client.js?v=697e3f61:36
+<DownloadPage>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=697e3f61:247
+AnimatedRoutes @ App.tsx:21
+react_stack_bottom_frame @ react-dom_client.js?v=697e3f61:18509
+renderWithHooksAgain @ react-dom_client.js?v=697e3f61:5729
+renderWithHooks @ react-dom_client.js?v=697e3f61:5665
+updateFunctionComponent @ react-dom_client.js?v=697e3f61:7475
+beginWork @ react-dom_client.js?v=697e3f61:8525
+runWithFiberInDEV @ react-dom_client.js?v=697e3f61:997
+performUnitOfWork @ react-dom_client.js?v=697e3f61:12561
+workLoopSync @ react-dom_client.js?v=697e3f61:12424
+renderRootSync @ react-dom_client.js?v=697e3f61:12408
+performWorkOnRoot @ react-dom_client.js?v=697e3f61:11766
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=697e3f61:13505
+performWorkUntilDeadline @ react-dom_client.js?v=697e3f61:36
+<AnimatedRoutes>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=697e3f61:247
+App @ App.tsx:39
+react_stack_bottom_frame @ react-dom_client.js?v=697e3f61:18509
+renderWithHooksAgain @ react-dom_client.js?v=697e3f61:5729
+renderWithHooks @ react-dom_client.js?v=697e3f61:5665
+updateFunctionComponent @ react-dom_client.js?v=697e3f61:7475
+beginWork @ react-dom_client.js?v=697e3f61:8525
+runWithFiberInDEV @ react-dom_client.js?v=697e3f61:997
+performUnitOfWork @ react-dom_client.js?v=697e3f61:12561
+workLoopSync @ react-dom_client.js?v=697e3f61:12424
+renderRootSync @ react-dom_client.js?v=697e3f61:12408
+performWorkOnRoot @ react-dom_client.js?v=697e3f61:11766
+performWorkOnRootViaSchedulerTask @ react-dom_client.js?v=697e3f61:13505
+performWorkUntilDeadline @ react-dom_client.js?v=697e3f61:36
+<App>
+exports.jsxDEV @ react_jsx-dev-runtime.js?v=697e3f61:247
+(anonymous) @ index.tsx:13Understand this error
+mockApi.ts:390 📦 Starting zip creation for 195 files...
+mockApi.ts:448 📥 Batch 1/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 1 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 20 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_143359558.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060424Z&X-Amz-Expires=3600&X-Amz-Signature=d84f531fa6dca88599246a2ba69a0ba59f8b245f90e41723cb6fa1003006e927&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 6 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_121413884.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060424Z&X-Amz-Expires=3600&X-Amz-Signature=6c202f330adf2855b75a1da7fe7d53a0b060b29ff659fbcc9ed5f14a8d4e6d2e&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 7 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_143347893.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060424Z&X-Amz-Expires=3600&X-Amz-Signature=7529f18e89c0caa3affd8586bb6082285a0e25192237f0926fd83dc77ed1b5e6&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 19 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_121410069.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060424Z&X-Amz-Expires=3600&X-Amz-Signature=9af428cfd78740c727a06fcf5dd5d9fa355bd2b58412d103129298793d892fd4&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 18 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226123941.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060425Z&X-Amz-Expires=3600&X-Amz-Signature=e28a149049b502193ca8cac649e59ae164951c223a5a0d0e39532ec98b5d1a2b&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 6 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_111146407.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060425Z&X-Amz-Expires=3600&X-Amz-Signature=673b72c31a998faebea22535bb80b64425909b545134adc7c446e60113d8f73f&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 19 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_143343362.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060425Z&X-Amz-Expires=3600&X-Amz-Signature=1aa6746dfa75048c24d5dab1e585a51c743cb9b50bebb2dfd763e7d5fd852070&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 19 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_143359558.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060426Z&X-Amz-Expires=3600&X-Amz-Signature=cb79dcad44e28c3511018f244effeacc45b93ea4f2480e2ca651fb10ebc60eaa&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 19 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226123941.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060426Z&X-Amz-Expires=3600&X-Amz-Signature=a3ffb0f2d5a1269ade5eb57744313eb92120cf008bcb1126cdbbfee929fe1a3c&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 18 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226150949.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060426Z&X-Amz-Expires=3600&X-Amz-Signature=795b9f2f5ccb2f9579c68b094cab82aa108aa18f403dad28bb99ca708b208947&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_143347893.jpg (6507.7KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_143359558.jpg (5668.5KB)
+mockApi.ts:462 ✓ Fetched IMG20251226123941.jpg (3825.8KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_143343362.jpg (6777.2KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_111146407.jpg (7485.9KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_121410069.jpg (9462.4KB)
+mockApi.ts:462 ✓ Fetched IMG20251226150949.jpg (4111.4KB)
+mockApi.ts:462 ✓ Fetched IMG20251226123941.jpg (3825.8KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_121413884.jpg (8671.0KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_143359558.jpg (5668.5KB)
+mockApi.ts:478 ✅ Batch 1 fetch complete!
+mockApi.ts:487 🗜️ Batch 1/20: Adding files to zip...
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_111146407.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_143359558.jpg
+mockApi.ts:515 ✓ Added to zip: IMG20251226123941.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_121413884.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_143347893.jpg
+mockApi.ts:515 ✓ Added to zip: IMG20251226150949.jpg
+mockApi.ts:509 ⚠️ Duplicate filename detected. Renaming RIYAN_20251226_143359558.jpg → RIYAN_20251226_143359558_1.jpg
+downloadFolderAsZip @ mockApi.ts:509Understand this warning
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_143359558_1.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_143343362.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_121410069.jpg
+mockApi.ts:509 ⚠️ Duplicate filename detected. Renaming IMG20251226123941.jpg → IMG20251226123941_1.jpg
+downloadFolderAsZip @ mockApi.ts:509Understand this warning
+mockApi.ts:515 ✓ Added to zip: IMG20251226123941_1.jpg
+mockApi.ts:524 ✅ Batch 1/20 complete. Progress: 10/195 files added.
+mockApi.ts:448 📥 Batch 2/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 2 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 6 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_113206073.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060444Z&X-Amz-Expires=3600&X-Amz-Signature=879cbff90cdad7692e3c59c6874187970bc9a38332ecb2cda447b8033dd48c69&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 6 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_121410069.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060444Z&X-Amz-Expires=3600&X-Amz-Signature=8b9a28643ddea3dbdb540501278aecba7185e28d0fafe09e2a520fb1f562bbad&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 8 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226150949.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060444Z&X-Amz-Expires=3600&X-Amz-Signature=03c13e18ef7b09e409d27b9f08868795a7276224299dee513923ac38101a1c86&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 19 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_143347893.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060444Z&X-Amz-Expires=3600&X-Amz-Signature=e28920307c245f0e6d2b62d654e55b02b5d7c6f14101cecc0a00a7a490750591&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 19 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226123909.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060445Z&X-Amz-Expires=3600&X-Amz-Signature=1c5cfbaf7d105b9bc36a5a37e5726967d8475ff9b45d540a7313a34648610a5b&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 6 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226123909.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060445Z&X-Amz-Expires=3600&X-Amz-Signature=1c5cfbaf7d105b9bc36a5a37e5726967d8475ff9b45d540a7313a34648610a5b&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110436567.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060445Z&X-Amz-Expires=3600&X-Amz-Signature=644682ed13265b0c804c3e76ccaa23651a6d5b1ad4401f98bd63e11eead800aa&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_111136307.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060445Z&X-Amz-Expires=3600&X-Amz-Signature=d8d2b73c413273b77070cb7bf0a71e0ed835a0e94fd9d55f03ecbade64a4d016&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 6 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_111146407.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060446Z&X-Amz-Expires=3600&X-Amz-Signature=7d43287e8692b63abf2c7f92c00a0aa380277f52d859ae46516fcbfcca608f5b&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 18 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_121413884.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060446Z&X-Amz-Expires=3600&X-Amz-Signature=056b09fac9065781cf2c2f42eda844017c8c3deb4b5b4a8b7a4ef163a48688ae&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG20251226123909.jpg (3318.7KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_113206073.jpg (7060.9KB)
+mockApi.ts:462 ✓ Fetched IMG20251226150949.jpg (4111.4KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_143347893.jpg (6507.7KB)
+mockApi.ts:462 ✓ Fetched IMG20251226123909.jpg (3318.7KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_111136307.jpg (5096.0KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110436567.jpg (7016.4KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_121410069.jpg (9462.4KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_111146407.jpg (7485.9KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_121413884.jpg (8671.0KB)
+mockApi.ts:478 ✅ Batch 2 fetch complete!
+mockApi.ts:487 🗜️ Batch 2/20: Adding files to zip...
+mockApi.ts:509 ⚠️ Duplicate filename detected. Renaming RIYAN_20251226_121410069.jpg → RIYAN_20251226_121410069_1.jpg
+downloadFolderAsZip @ mockApi.ts:509Understand this warning
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_121410069_1.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_113206073.jpg
+mockApi.ts:509 ⚠️ Duplicate filename detected. Renaming IMG20251226150949.jpg → IMG20251226150949_1.jpg
+downloadFolderAsZip @ mockApi.ts:509Understand this warning
+mockApi.ts:515 ✓ Added to zip: IMG20251226150949_1.jpg
+mockApi.ts:515 ✓ Added to zip: IMG20251226123909.jpg
+mockApi.ts:509 ⚠️ Duplicate filename detected. Renaming RIYAN_20251226_111146407.jpg → RIYAN_20251226_111146407_1.jpg
+downloadFolderAsZip @ mockApi.ts:509Understand this warning
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_111146407_1.jpg
+mockApi.ts:509 ⚠️ Duplicate filename detected. Renaming RIYAN_20251226_143347893.jpg → RIYAN_20251226_143347893_1.jpg
+downloadFolderAsZip @ mockApi.ts:509Understand this warning
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_143347893_1.jpg
+mockApi.ts:509 ⚠️ Duplicate filename detected. Renaming IMG20251226123909.jpg → IMG20251226123909_1.jpg
+downloadFolderAsZip @ mockApi.ts:509Understand this warning
+mockApi.ts:515 ✓ Added to zip: IMG20251226123909_1.jpg
+mockApi.ts:509 ⚠️ Duplicate filename detected. Renaming RIYAN_20251226_121413884.jpg → RIYAN_20251226_121413884_1.jpg
+downloadFolderAsZip @ mockApi.ts:509Understand this warning
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_121413884_1.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_111136307.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110436567.jpg
+mockApi.ts:524 ✅ Batch 2/20 complete. Progress: 20/195 files added.
+mockApi.ts:448 📥 Batch 3/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 3 to complete...
+4:3000/#/download?sha…a96c-d33ca25da64d:1 Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was receivedUnderstand this error
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110439807.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060503Z&X-Amz-Expires=3600&X-Amz-Signature=dda193456fa7814a9409c1b249f4fcc83bd4995948ae7a88d3ca29bd692441f3&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110428955.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060504Z&X-Amz-Expires=3600&X-Amz-Signature=6fc9659b875897e57c05f6e38f618ce6358f05b471e3ffd0acdc2b75560920af&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_111144770.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060504Z&X-Amz-Expires=3600&X-Amz-Signature=df68ea6aa5d1fc6b1157109ffb7d65e6396fe731cbcf955ed9fca53cfb6615d5&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110618920.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060504Z&X-Amz-Expires=3600&X-Amz-Signature=3e9df8cebcd4c114742ac4aa660873870b92c949fd0a2c9ce4372e8b7c5cd26c&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_111121932.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060504Z&X-Amz-Expires=3600&X-Amz-Signature=b6f79a7891f852b16ca3a4d03313cb3752f01bdcfbcf6d50a97b2ec97d115bf8&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110434315.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060505Z&X-Amz-Expires=3600&X-Amz-Signature=ae96f51632a3a2fd7b39c009c2eec1b312822e573c9c5b55d6b5a8eaa4b47b87&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110140298.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060505Z&X-Amz-Expires=3600&X-Amz-Signature=c9042e13380dd9e58ea07a1f7aaae101bb307354c4c07a7f08afc889a58216db&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_111001145.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060506Z&X-Amz-Expires=3600&X-Amz-Signature=c187d3ad322cb597b8506ef86915f7b92beeddf1700106a0ecdc62fff7a7090b&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_111120038.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060506Z&X-Amz-Expires=3600&X-Amz-Signature=258b411f8814674ca2f3175aa93bfdac883e2e0248596eb693492cee8c875a9a&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110244959.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060506Z&X-Amz-Expires=3600&X-Amz-Signature=c3ce81bf9e40caf870b9017ccb1a5d3b75df9c8d9c096f631a86c288ad7776ee&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110439807.jpg (7533.1KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_111121932.jpg (7436.8KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110434315.jpg (7283.7KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110618920.jpg (7058.4KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110428955.jpg (7972.8KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110140298.jpg (7621.7KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_111001145.jpg (6818.1KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_111144770.jpg (7293.8KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110244959.jpg (7557.3KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_111120038.jpg (7242.6KB)
+mockApi.ts:478 ✅ Batch 3 fetch complete!
+mockApi.ts:487 🗜️ Batch 3/20: Adding files to zip...
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110439807.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_111120038.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_111144770.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_111121932.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110618920.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_111001145.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110434315.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110244959.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110140298.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110428955.jpg
+mockApi.ts:524 ✅ Batch 3/20 complete. Progress: 30/195 files added.
+mockApi.ts:448 📥 Batch 4/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 4 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110333404.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060529Z&X-Amz-Expires=3600&X-Amz-Signature=cc55281cb3b856503aa6c09e4209613efa1a6ba7af2f71998b4f903b2889bced&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110225043.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060530Z&X-Amz-Expires=3600&X-Amz-Signature=293fd837dc5a5b597746e46fde456111e5e8944fd6e7827d0b7c937a8c183402&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110143297.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060530Z&X-Amz-Expires=3600&X-Amz-Signature=01059668ef0bc9562a5a7a11c09bfa8d2b261771975b9d134a305bc24fa4f273&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110149603.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060530Z&X-Amz-Expires=3600&X-Amz-Signature=ef7202b15cd6278df5dcc1355ce8baf65f5e0bbaf383b1fd157ae5f84a54cc56&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110310521.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060530Z&X-Amz-Expires=3600&X-Amz-Signature=fcc78eb17da45bcd2bc155f627c7cbfe05404d5b736a34f7486359646321dc9f&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110203667.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060530Z&X-Amz-Expires=3600&X-Amz-Signature=3cf26dc61b953831d410b21dfba093c87fae619eb47e327e3cf077d00af05a21&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110354868.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060531Z&X-Amz-Expires=3600&X-Amz-Signature=2b5085510b059abbb102426aeab86b91fcb298d842e46927ce07f0f0bfcc32f6&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110246518.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060531Z&X-Amz-Expires=3600&X-Amz-Signature=9f238dc441d72c2175200257989927837cf4c5c9575d0f0dcee56f52f25ad8bd&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110423423.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060532Z&X-Amz-Expires=3600&X-Amz-Signature=927202984f2210c63b85cef6ebbfb9c9e8751d23e2399c48332048f8674388d6&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110201207.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060532Z&X-Amz-Expires=3600&X-Amz-Signature=07669b73f91a5b249f852664e95261aacabbb81feef46e40f4e1c173ce3ab6d1&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110225043.jpg (7444.5KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110310521.jpg (7516.0KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110143297.jpg (6979.9KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110149603.jpg (7538.0KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110203667.jpg (7409.3KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110354868.jpg (6565.1KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110333404.jpg (7601.6KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110246518.jpg (7601.1KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110423423.jpg (7963.7KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110201207.jpg (7208.8KB)
+mockApi.ts:478 ✅ Batch 4 fetch complete!
+mockApi.ts:487 🗜️ Batch 4/20: Adding files to zip...
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110225043.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110354868.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110143297.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110149603.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110333404.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110310521.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110203667.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110246518.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110201207.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110423423.jpg
+mockApi.ts:524 ✅ Batch 4/20 complete. Progress: 40/195 files added.
+mockApi.ts:448 📥 Batch 5/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 5 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110339894.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060553Z&X-Amz-Expires=3600&X-Amz-Signature=dbaf6b27db070878bb2337b619e8b3f9012f89802f74aa2ae95c53e1b4097b2e&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110620846.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060554Z&X-Amz-Expires=3600&X-Amz-Signature=c5c61757c684863420b0a985e43690f0e3ce97c433da4480cd34373f8a8f2bce&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/VID_20251226_132537.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060554Z&X-Amz-Expires=3600&X-Amz-Signature=88ee97b09a74acdd15eea4d7d103ba0ad3e1880a1fc0e8201f445a430f7b688c&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_110113.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060554Z&X-Amz-Expires=3600&X-Amz-Signature=0d3d7aae29696574fa2fef7ac2d3dd968befc8ea3e826add8ebdd35d9f58c8c3&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_105030.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060554Z&X-Amz-Expires=3600&X-Amz-Signature=bca0d7e61cede1a406d84c36377e9cec092e9e564496bb39d708bdea03436386&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110152404.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060554Z&X-Amz-Expires=3600&X-Amz-Signature=2dab330e13665393cc95e842ffa43da7d6dec6e054b9b0803fb1ea476e5c1f2d&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110427086.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060555Z&X-Amz-Expires=3600&X-Amz-Signature=617c3c715eb87ec6b7371b5eec08448654eac5099a6c9713d5c26c81fdf9c307&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110136209.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060555Z&X-Amz-Expires=3600&X-Amz-Signature=f49996af58683a3b0cacd210f33d3350e5258d797c47a9bd965e03c2df345a75&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_105307.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060555Z&X-Amz-Expires=3600&X-Amz-Signature=e5e1d7f49a97276a66f205f8cb7a6b782686ceb5866e3ee864463933d041787c&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_103922.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060556Z&X-Amz-Expires=3600&X-Amz-Signature=96bd8e478cb98389cf3d80d098e924fdb5d3b19bc57f685bf12999d5200c1bda&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG_20251226_105030.jpg (9399.7KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110152404.jpg (7597.1KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_110113.jpg (6656.4KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110620846.jpg (6940.3KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110427086.jpg (8008.9KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_105307.jpg (2486.8KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110339894.jpg (8055.4KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110136209.jpg (7537.8KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_103922.jpg (6033.5KB)
+content.js:6 Content script received message: {action: 'newVideoLink', link: {…}}
+content.js:10 New video link detected: {url: 'https://storage.0bb4cf9e55f7385ec61340fc7583629d.r…me%3D%22VID_20251226_132537.mp4%22&x-id=GetObject', type: 'MP4', quality: '720p', source: 'Network Request', timestamp: 1766815595675}
+mockApi.ts:462 ✓ Fetched VID_20251226_132537.mp4 (78896.6KB)
+mockApi.ts:478 ✅ Batch 5 fetch complete!
+mockApi.ts:487 🗜️ Batch 5/20: Adding files to zip...
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110339894.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110427086.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110620846.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_105030.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110152404.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_110113.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_103922.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_105307.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110136209.jpg
+mockApi.ts:515 ✓ Added to zip: VID_20251226_132537.mp4
+mockApi.ts:524 ✅ Batch 5/20 complete. Progress: 50/195 files added.
+mockApi.ts:448 📥 Batch 6/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 6 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105815773.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060643Z&X-Amz-Expires=3600&X-Amz-Signature=099be116c5c485c6eb442c13cdd9edbec57656c7282f90a61417dcac1f6699bb&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105842931.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060643Z&X-Amz-Expires=3600&X-Amz-Signature=1103119b5ab723de2a862e388c9b4cec3c9d19574943bfae8820fa99e1f5dcd7&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110219983.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060643Z&X-Amz-Expires=3600&X-Amz-Signature=eaf34a89074415b363a5e037a047b059d973c8b620b8f75e0609993f3bce0372&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105640060.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060644Z&X-Amz-Expires=3600&X-Amz-Signature=7b65a01fd347e15ac9515040fa62334d030a0f21b4a8106e803624edf3a0e41d&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_095012.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060644Z&X-Amz-Expires=3600&X-Amz-Signature=44b36230cbebb95888b367638e023e6b47d957c809a030c039da7c3493f67aed&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_105031.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060644Z&X-Amz-Expires=3600&X-Amz-Signature=a606147558bdf971e2e5429a9a060423dd6b6ff5a2337c854ace48c260b900bb&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226105506.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060645Z&X-Amz-Expires=3600&X-Amz-Signature=9018d7f74edd551012857180ba998ccae61b11627dfc2f75cd457c425a2d7019&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110114609.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060645Z&X-Amz-Expires=3600&X-Amz-Signature=8850ec5c26de1c0d5bcd4e7227e8f4e70b87f68e22ad0837edc7b1b34c401112&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105859490.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060646Z&X-Amz-Expires=3600&X-Amz-Signature=03db06a0acf9cec0f394358274f9bc1d9de99bb062f040af33d893129e2d5b20&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110057205.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060646Z&X-Amz-Expires=3600&X-Amz-Signature=225bc5b60fa3995aafe5ae1e9aeb857ec1dd59256dab0af951751cd56c946bc1&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110219983.jpg (7757.1KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105815773.jpg (6255.7KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105640060.jpg (6283.6KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_095012.jpg (3920.0KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110114609.jpg (8081.7KB)
+mockApi.ts:462 ✓ Fetched IMG20251226105506.jpg (7115.9KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_105031.jpg (9351.3KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105842931.jpg (6717.4KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105859490.jpg (7141.0KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110057205.jpg (7740.7KB)
+mockApi.ts:478 ✅ Batch 6 fetch complete!
+mockApi.ts:487 🗜️ Batch 6/20: Adding files to zip...
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110057205.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_095012.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105640060.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_105031.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105842931.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105859490.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105815773.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110219983.jpg
+mockApi.ts:515 ✓ Added to zip: IMG20251226105506.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110114609.jpg
+mockApi.ts:524 ✅ Batch 6/20 complete. Progress: 60/195 files added.
+mockApi.ts:448 📥 Batch 7/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 7 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_105133.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060706Z&X-Amz-Expires=3600&X-Amz-Signature=23ed593df4e1fbf0ca5694b53136c2d728b04eabc450be0c8b4db866735a1f01&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110222617.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060706Z&X-Amz-Expires=3600&X-Amz-Signature=eaa1fe3fc5eaf798a655a8b9938609021829c6e25dd4a6553c4bb39631c73ae4&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105548833.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060707Z&X-Amz-Expires=3600&X-Amz-Signature=8037281422cf6da1eb3b33d64bb158636c1933df75a4908e87bd7550fd56aee1&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105844378.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060707Z&X-Amz-Expires=3600&X-Amz-Signature=3748852522c269f005d92c0c5449596da213acd40740e6438fbeb518029f271a&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/VID_20251226_092744.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060707Z&X-Amz-Expires=3600&X-Amz-Signature=2d4caeb830010f06e4ee0e31b0e7a8f329ba70e57b2fdd9a463bdc5b08a918c9&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110101683.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060707Z&X-Amz-Expires=3600&X-Amz-Signature=186dbbbdc595a8d7e6f67e0d7e8ebf6a58a5ae96572cc0ee2d57173a84894c79&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105008173.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060708Z&X-Amz-Expires=3600&X-Amz-Signature=cac501ae1a238c849a7d6247589c91188e84cdafe0c24be7aa4b04f3c50de518&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105816950.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060708Z&X-Amz-Expires=3600&X-Amz-Signature=891c9abc407c0ff5cb1573433708022899f156751d164bb66314830dc6d44f08&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105404143.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060708Z&X-Amz-Expires=3600&X-Amz-Signature=acac545438bce6c0c60d81e5e2a50bc1c5ec2ff7bcb48262bee8938404987e28&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226101404.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060709Z&X-Amz-Expires=3600&X-Amz-Signature=e461fd2af89e7fb99ed9e1756c9a8cff93e6b02dc6dda992c82de148679ca1ae&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG_20251226_105133.jpg (4472.7KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105548833.jpg (7092.2KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105008173.jpg (10064.9KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110101683.jpg (6793.8KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110222617.jpg (7414.6KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105844378.jpg (7188.1KB)
+mockApi.ts:462 ✓ Fetched IMG20251226101404.jpg (3351.9KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105816950.jpg (6750.7KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105404143.jpg (7416.5KB)
+content.js:6 Content script received message: {action: 'newVideoLink', link: {…}}
+content.js:10 New video link detected: {url: 'https://storage.0bb4cf9e55f7385ec61340fc7583629d.r…me%3D%22VID_20251226_092744.mp4%22&x-id=GetObject', type: 'MP4', quality: null, source: 'Network Request', timestamp: 1766815657352}
+mockApi.ts:462 ✓ Fetched VID_20251226_092744.mp4 (52899.3KB)
+mockApi.ts:478 ✅ Batch 7 fetch complete!
+mockApi.ts:487 🗜️ Batch 7/20: Adding files to zip...
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105816950.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105844378.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110101683.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105548833.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_105133.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110222617.jpg
+mockApi.ts:515 ✓ Added to zip: VID_20251226_092744.mp4
+mockApi.ts:515 ✓ Added to zip: IMG20251226101404.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105404143.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105008173.jpg
+mockApi.ts:524 ✅ Batch 7/20 complete. Progress: 70/195 files added.
+mockApi.ts:448 📥 Batch 8/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 8 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_103734601.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060743Z&X-Amz-Expires=3600&X-Amz-Signature=745ef3d47977c8cb02153ededa708b897dbd060b554b24df8a6716ab7d20605a&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_103749414.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060744Z&X-Amz-Expires=3600&X-Amz-Signature=30e2e3c2f0378a6fa72bddf92928f1eb7e3b4339586a57d306aa7840e46989e5&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_103655873.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060744Z&X-Amz-Expires=3600&X-Amz-Signature=72c07548cea576c4aee3240fa5d1d780366fd1a4808524cdabda17eca29df383&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_104212025.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060744Z&X-Amz-Expires=3600&X-Amz-Signature=749660abec98c387cee159c0c90045e16c85deeb5cfa6cb7e9f7c5ace36698fb&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_103733223.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060744Z&X-Amz-Expires=3600&X-Amz-Signature=f83069b5fb8105d147b9cb044384d1e8e98735ae8f4aade3209a4de1a6f71c45&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_103340449.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060744Z&X-Amz-Expires=3600&X-Amz-Signature=c52ec95e8a17949ae12a78f7f23e5c33a5fc269b898476c596e719dcf81bf7bc&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105028319.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060745Z&X-Amz-Expires=3600&X-Amz-Signature=53caaa16b8fb44b0bd00d9126d7b26379850d9d68118a2074d72e2fc4de5a692&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_103153084.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060745Z&X-Amz-Expires=3600&X-Amz-Signature=5b5dc9bc22d1a91a6a895825f8d2a73fe4c23f583b4b0814bb045acf282a07ae&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_104213420.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060745Z&X-Amz-Expires=3600&X-Amz-Signature=893084cb13de3223b7b8205b3cf9cfacc043ac3450ca59abde10bea5321bbdd5&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226101409.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060746Z&X-Amz-Expires=3600&X-Amz-Signature=bc0c159152182fac5a2cef50a46d368b4d7fcc682cc2a3c9606ec2c8619479e0&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_103655873.jpg (6784.5KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_103733223.jpg (7290.6KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_103340449.jpg (7450.2KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_103734601.jpg (7323.5KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_104212025.jpg (8779.9KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_103749414.jpg (7102.4KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105028319.jpg (9997.3KB)
+mockApi.ts:462 ✓ Fetched IMG20251226101409.jpg (4153.5KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_103153084.jpg (7352.1KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_104213420.jpg (8753.1KB)
+mockApi.ts:478 ✅ Batch 8 fetch complete!
+mockApi.ts:487 🗜️ Batch 8/20: Adding files to zip...
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105028319.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_104213420.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_104212025.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_103733223.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_103749414.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_103340449.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_103734601.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_103153084.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_103655873.jpg
+mockApi.ts:515 ✓ Added to zip: IMG20251226101409.jpg
+mockApi.ts:524 ✅ Batch 8/20 complete. Progress: 80/195 files added.
+mockApi.ts:448 📥 Batch 9/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 9 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_103747969.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060807Z&X-Amz-Expires=3600&X-Amz-Signature=05d8e3c5604b365d7e8654d3a08a949832dd28460adca0af2f983d2cda248ff8&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226101413.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060808Z&X-Amz-Expires=3600&X-Amz-Signature=927d982b0cce26c24fa6ea528a8d7e8b3856cf430e4e26d3fad8c249a4b71c68&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_103654772.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060808Z&X-Amz-Expires=3600&X-Amz-Signature=fa999d76526b3a2fe001f1b3782bc1c564251940e598195217a62bc0651cfb27&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226105504.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060808Z&X-Amz-Expires=3600&X-Amz-Signature=f1ae565f72a5eb9352e85232ff203647977797668a4b1afd1a253f9f918172ca&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105256748.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060808Z&X-Amz-Expires=3600&X-Amz-Signature=2b509dc100a42b0eb11cc3f8379ad258c78870b4cf2abdbf5c408cd7a42ff60b&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_094844292.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060809Z&X-Amz-Expires=3600&X-Amz-Signature=2bb7db9327ee2b291694781ab2c477da0e323a2db1591d541a927fdf495a8b5b&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105438936.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060809Z&X-Amz-Expires=3600&X-Amz-Signature=023b560d573ad2c531df70ecca75858bbc2030ef7e40dd43547c3c86eb06a483&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105042891.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060809Z&X-Amz-Expires=3600&X-Amz-Signature=ef8dfb24f518b8f2f84472a4491cda30a0bd8c849e7df761f8e6724c9940470b&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105031508.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060810Z&X-Amz-Expires=3600&X-Amz-Signature=1dd0dcfbecfa714a4cf96825a020a9f0ffa723fb08bb0d1d417aa132253ea317&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105423967.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060810Z&X-Amz-Expires=3600&X-Amz-Signature=e6550829dce257a5d0f7daaa9a4a73140512436c3b3cf24e6c783fe08ba77360&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_103747969.jpg (7163.2KB)
+mockApi.ts:462 ✓ Fetched IMG20251226101413.jpg (3255.8KB)
+mockApi.ts:462 ✓ Fetched IMG20251226105504.jpg (6761.6KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105256748.jpg (9853.7KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_094844292.jpg (8467.8KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105438936.jpg (8386.9KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105042891.jpg (9943.3KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_103654772.jpg (6795.2KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105423967.jpg (8687.6KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105031508.jpg (9973.8KB)
+mockApi.ts:478 ✅ Batch 9 fetch complete!
+mockApi.ts:487 🗜️ Batch 9/20: Adding files to zip...
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_103747969.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_103654772.jpg
+mockApi.ts:515 ✓ Added to zip: IMG20251226101413.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_094844292.jpg
+mockApi.ts:515 ✓ Added to zip: IMG20251226105504.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105438936.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105256748.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105031508.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105423967.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105042891.jpg
+mockApi.ts:524 ✅ Batch 9/20 complete. Progress: 90/195 files added.
+mockApi.ts:448 📥 Batch 10/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 10 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105052611.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060835Z&X-Amz-Expires=3600&X-Amz-Signature=ac93b25faa83a6e329030b2c672f34d33ebbee84a8f2a0cd61bca5031d7127de&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_105029.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060836Z&X-Amz-Expires=3600&X-Amz-Signature=d2045da69a368aeee725c4d2bdddb7c8d6cd3d40031879a56c18f22596c5b053&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105631512.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060836Z&X-Amz-Expires=3600&X-Amz-Signature=b9b91f63a5031f720d8506e044d3e829e24b07b76a1b6571a1709e947933f0e4&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105615179.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060836Z&X-Amz-Expires=3600&X-Amz-Signature=38cd8655e0705b27e7b56b802509ded753c2d10817546a84863ef3ee827e3084&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/VID_20251226_132537.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060836Z&X-Amz-Expires=3600&X-Amz-Signature=4bf504c9bfbd50cc13ec8660d70b6885e68fc6f838e5476f32ab1a98cd742254&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105437367.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060836Z&X-Amz-Expires=3600&X-Amz-Signature=983d12be95555d7b5c2c60a04456cce982a251ce0155ba63f1a35249c604e62a&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105123134.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060837Z&X-Amz-Expires=3600&X-Amz-Signature=eae0d14fce4ca30c87833c79e83517d5638740d424ee452076a6fc758a1b5296&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105304084.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060837Z&X-Amz-Expires=3600&X-Amz-Signature=300955b1c7c766665c05e26c221af2c490edbf118a216237f25b7d449170bdcf&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105311312.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060837Z&X-Amz-Expires=3600&X-Amz-Signature=1808eee6e07368252289a55b984f5bc0184ed40ba6d6344303e4ac68b279f367&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105045351.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060838Z&X-Amz-Expires=3600&X-Amz-Signature=cc6a9e2dcbafc650efba98fa798b866a78a23e2346a92dfcfebae0268f6b9c56&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105437367.jpg (8341.9KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105615179.jpg (7535.2KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105631512.jpg (7154.2KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105052611.jpg (9115.0KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_105029.jpg (9131.5KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105123134.jpg (9367.8KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105311312.jpg (8314.3KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105304084.jpg (9757.7KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105045351.jpg (9841.3KB)
+mockApi.ts:462 ✓ Fetched VID_20251226_132537.mp4 (78896.6KB)
+mockApi.ts:478 ✅ Batch 10 fetch complete!
+mockApi.ts:487 🗜️ Batch 10/20: Adding files to zip...
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105045351.jpg
+mockApi.ts:509 ⚠️ Duplicate filename detected. Renaming VID_20251226_132537.mp4 → VID_20251226_132537_1.mp4
+downloadFolderAsZip @ mockApi.ts:509Understand this warning
+mockApi.ts:515 ✓ Added to zip: VID_20251226_132537_1.mp4
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105437367.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_105029.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105311312.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105615179.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105123134.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105052611.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105304084.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105631512.jpg
+mockApi.ts:524 ✅ Batch 10/20 complete. Progress: 100/195 files added.
+mockApi.ts:448 📥 Batch 11/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 11 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105030354.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060926Z&X-Amz-Expires=3600&X-Amz-Signature=4e6c50d1270216cab45a91be96363facd18c53f563c2f83405f08d7ae4e16ac8&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100801.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060926Z&X-Amz-Expires=3600&X-Amz-Signature=39e247b63941e71e183d1624bfb5608293ab59f01146e05090ecf67f8a458533&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105057654.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060927Z&X-Amz-Expires=3600&X-Amz-Signature=35b2e866aadb6c3dd4216cfc0e036bd17c0d50ea924c2c642302936ac514c41c&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226101413.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060927Z&X-Amz-Expires=3600&X-Amz-Signature=9298a9e8efe3f6f1f8ebf9d614adef89d2a5edc32ead0f1c0afdac9e614b58b5&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_090814867.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060927Z&X-Amz-Expires=3600&X-Amz-Signature=094adcf553c81d67402b55c15497429e720775a8be411436d34e6d5a351a3eec&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_094807132.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060927Z&X-Amz-Expires=3600&X-Amz-Signature=980bf60c501cd6e959c8f432cb7ac51dec43e8e4fe3050d79de1d2f600fd75bb&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226101425.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060928Z&X-Amz-Expires=3600&X-Amz-Signature=0b976a288186486af77b8096bf17548beb00ad791f8fcfd92e2bab29006e5b4d&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG_20251226_100801.jpg (1401.8KB)
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_094817017.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060928Z&X-Amz-Expires=3600&X-Amz-Signature=157ab3a5fddaff65cbc6c12e83dce45d7276d439d72c78fb1649cdde46f79160&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_131712.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060929Z&X-Amz-Expires=3600&X-Amz-Signature=9574864a8bac96c59b1e8aade6d984b93da87549a7c0307a5880de6f731f34bf&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226090736.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060929Z&X-Amz-Expires=3600&X-Amz-Signature=8f0480886f652898aa5359cb504b3af902f4e9fa26fa4fc626159d3561b240dd&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG20251226101413.jpg (3255.8KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_090814867.jpg (4895.9KB)
+mockApi.ts:462 ✓ Fetched IMG20251226101425.jpg (3635.4KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105057654.jpg (8638.3KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_131712.jpg (3710.6KB)
+mockApi.ts:462 ✓ Fetched IMG20251226090736.jpg (1852.6KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_094817017.jpg (8401.4KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105030354.jpg (10073.4KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_094807132.jpg (6032.3KB)
+mockApi.ts:478 ✅ Batch 11 fetch complete!
+mockApi.ts:487 🗜️ Batch 11/20: Adding files to zip...
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105030354.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105057654.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_094817017.jpg
+mockApi.ts:515 ✓ Added to zip: IMG20251226090736.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_094807132.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_090814867.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_131712.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100801.jpg
+mockApi.ts:509 ⚠️ Duplicate filename detected. Renaming IMG20251226101413.jpg → IMG20251226101413_1.jpg
+downloadFolderAsZip @ mockApi.ts:509Understand this warning
+mockApi.ts:515 ✓ Added to zip: IMG20251226101413_1.jpg
+mockApi.ts:515 ✓ Added to zip: IMG20251226101425.jpg
+mockApi.ts:524 ✅ Batch 11/20 complete. Progress: 110/195 files added.
+mockApi.ts:448 📥 Batch 12/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 12 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226101423.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060945Z&X-Amz-Expires=3600&X-Amz-Signature=db25198710ba5da4d82c24f26ca5381469bd93177d2609eaea167c7138db62fe&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226101409.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060945Z&X-Amz-Expires=3600&X-Amz-Signature=d333bd16711d164fab5d4de21f92f454ed1a2d64b31574d451dfac5b6bfb2bfa&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_131714.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060945Z&X-Amz-Expires=3600&X-Amz-Signature=5f257f4a720b19ecf2a477f848594fcca1a34a908e00cc7a64c0ff1b34ca92d6&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226083213.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060946Z&X-Amz-Expires=3600&X-Amz-Signature=bbb8cc518f367d2734b6cff0c2b645f6368f3b7766bf63e87e0a784b0eb7a6f9&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226090734.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060946Z&X-Amz-Expires=3600&X-Amz-Signature=2c95462de2a20143c719c81a826982940a2f3034bf9c1ada18e4c0429e564fe4&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_090802111.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060946Z&X-Amz-Expires=3600&X-Amz-Signature=a58e732d136c87b982f5070804cf6416074a742bc0784676b559edc3b5295ae5&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226101419.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060946Z&X-Amz-Expires=3600&X-Amz-Signature=2903aa3916ae0b4f205984f6f9005d542b665b6ba225ccde00f15633d60cc036&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_131609.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060947Z&X-Amz-Expires=3600&X-Amz-Signature=629f1e97ba5c197861f899a9560f903c88b13ee1f086f4849de23247e1146bfd&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_083244491.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060947Z&X-Amz-Expires=3600&X-Amz-Signature=5d7352c30d70adaeb1115707419e622e973694850a9d0a6ffa050fde1a58d3ba&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226131720_BURST000_COVER.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060947Z&X-Amz-Expires=3600&X-Amz-Signature=d79987468d93b1e77f1d311c468f6a8bb3a10a6eaf4859fe62f0b8e52f2a4da9&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG20251226101423.jpg (3349.2KB)
+mockApi.ts:462 ✓ Fetched IMG20251226090734.jpg (1886.0KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_090802111.jpg (4108.3KB)
+mockApi.ts:462 ✓ Fetched IMG20251226083213.jpg (2745.3KB)
+mockApi.ts:462 ✓ Fetched IMG20251226101409.jpg (4153.5KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_131714.jpg (3269.2KB)
+mockApi.ts:462 ✓ Fetched IMG20251226101419.jpg (3383.3KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_131609.jpg (4683.6KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_083244491.jpg (5394.0KB)
+mockApi.ts:462 ✓ Fetched IMG20251226131720_BURST000_COVER.jpg (3428.5KB)
+mockApi.ts:478 ✅ Batch 12 fetch complete!
+mockApi.ts:487 🗜️ Batch 12/20: Adding files to zip...
+mockApi.ts:515 ✓ Added to zip: IMG20251226101423.jpg
+mockApi.ts:515 ✓ Added to zip: IMG20251226083213.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_090802111.jpg
+mockApi.ts:509 ⚠️ Duplicate filename detected. Renaming IMG20251226101409.jpg → IMG20251226101409_1.jpg
+downloadFolderAsZip @ mockApi.ts:509Understand this warning
+mockApi.ts:515 ✓ Added to zip: IMG20251226101409_1.jpg
+mockApi.ts:515 ✓ Added to zip: IMG20251226101419.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_131609.jpg
+mockApi.ts:515 ✓ Added to zip: IMG20251226090734.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_083244491.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_131714.jpg
+mockApi.ts:515 ✓ Added to zip: IMG20251226131720_BURST000_COVER.jpg
+mockApi.ts:524 ✅ Batch 12/20 complete. Progress: 120/195 files added.
+mockApi.ts:448 📥 Batch 13/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 13 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_094756967.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060958Z&X-Amz-Expires=3600&X-Amz-Signature=a671f97245e02458e712dbce10879ab897c29898ded9f63bcddea1744c2a777d&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_091011214.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060958Z&X-Amz-Expires=3600&X-Amz-Signature=da814ad118f1ca8ed0a226537b0983f269defd29f3ffacda8574970fc7d82f91&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_145021.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060958Z&X-Amz-Expires=3600&X-Amz-Signature=acba85ff5558d7d709e35abb3203340551b3c8fc4fb1112e42c7c866bdd6238b&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 5 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226083209.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060959Z&X-Amz-Expires=3600&X-Amz-Signature=02f67e0ff0c63b066461479ede4a67fd2f8e6d3a90dc2e732b6f38e2c9d5b19a&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/VID_20251226_131652.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060959Z&X-Amz-Expires=3600&X-Amz-Signature=a5361dc4bc2db5cb7886f453e08759660ccc990be1602d6f4be6e5fe7d2d3a15&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/VID_20251226_131652.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060959Z&X-Amz-Expires=3600&X-Amz-Signature=a5361dc4bc2db5cb7886f453e08759660ccc990be1602d6f4be6e5fe7d2d3a15&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/VID_20251226_131211.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T060959Z&X-Amz-Expires=3600&X-Amz-Signature=2ad000c006463b37fae3f52b8319ffc199693b780fd8a3872a6e688dc8f325d2&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_145020.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061000Z&X-Amz-Expires=3600&X-Amz-Signature=f9063181555a5bfac3f73f872e560c681681df8475c2901db5b6062815c08506&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_123418.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061000Z&X-Amz-Expires=3600&X-Amz-Signature=f9ae78d2b5d8308b1b1e43fb0354761372458434a160dfa71876613f0392b62b&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_131609.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061000Z&X-Amz-Expires=3600&X-Amz-Signature=aeaac56592ce346ff314b345cd1990961558c50ada1560091d057c5271887df2&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG20251226083209.jpg (2884.1KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_091011214.jpg (4696.7KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_145021.jpg (3565.3KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_094756967.jpg (7698.6KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_145020.jpg (2968.1KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_123418.jpg (4982.4KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_131609.jpg (4683.6KB)
+content.js:6 Content script received message: {action: 'newVideoLink', link: {…}}
+content.js:10 New video link detected: {url: 'https://storage.0bb4cf9e55f7385ec61340fc7583629d.r…me%3D%22VID_20251226_131652.mp4%22&x-id=GetObject', type: 'MP4', quality: null, source: 'Network Request', timestamp: 1766815820270}
+2mockApi.ts:462 ✓ Fetched VID_20251226_131652.mp4 (18372.6KB)
+content.js:6 Content script received message: {action: 'newVideoLink', link: {…}}
+content.js:10 New video link detected: {url: 'https://storage.0bb4cf9e55f7385ec61340fc7583629d.r…me%3D%22VID_20251226_131211.mp4%22&x-id=GetObject', type: 'MP4', quality: null, source: 'Network Request', timestamp: 1766815892569}
+mockApi.ts:462 ✓ Fetched VID_20251226_131211.mp4 (249879.1KB)
+mockApi.ts:478 ✅ Batch 13 fetch complete!
+mockApi.ts:487 🗜️ Batch 13/20: Adding files to zip...
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_094756967.jpg
+mockApi.ts:515 ✓ Added to zip: IMG20251226083209.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_091011214.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_145021.jpg
+mockApi.ts:515 ✓ Added to zip: VID_20251226_131652.mp4
+mockApi.ts:509 ⚠️ Duplicate filename detected. Renaming VID_20251226_131652.mp4 → VID_20251226_131652_1.mp4
+downloadFolderAsZip @ mockApi.ts:509Understand this warning
+mockApi.ts:515 ✓ Added to zip: VID_20251226_131652_1.mp4
+mockApi.ts:509 ⚠️ Duplicate filename detected. Renaming IMG_20251226_131609.jpg → IMG_20251226_131609_1.jpg
+downloadFolderAsZip @ mockApi.ts:509Understand this warning
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_131609_1.jpg
+mockApi.ts:515 ✓ Added to zip: VID_20251226_131211.mp4
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_123418.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_145020.jpg
+mockApi.ts:524 ✅ Batch 13/20 complete. Progress: 130/195 files added.
+mockApi.ts:448 📥 Batch 14/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 14 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_114855.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061148Z&X-Amz-Expires=3600&X-Amz-Signature=fb1f570238b20f9c605b62139d663df0ad00e02fba65adefb9bee91fa0ba6905&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226131720_BURST000_COVER.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061148Z&X-Amz-Expires=3600&X-Amz-Signature=e30c9cb104138c90ee622118359ceb9a2156deca3fe372f4ebaef954aabdab48&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_112905.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061148Z&X-Amz-Expires=3600&X-Amz-Signature=9652ccec2aaadb32642afa989882196ab5e54fcb0fd31467817a60240bd5ee8f&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_131712.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061149Z&X-Amz-Expires=3600&X-Amz-Signature=d1a15a6106a7d3f3eccd458706f5bdd9f5ca543cb69a7b2e6659b3000321e7c2&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/VID_20251226_123652.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061149Z&X-Amz-Expires=3600&X-Amz-Signature=777d3a2c6a1850649d6b94d91ea1f6bb32b7962315cb5e1558461e6068907142&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/VID_20251226_132915.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061149Z&X-Amz-Expires=3600&X-Amz-Signature=4a500b635b50ffca2e02ed77399650283471404629f59ee08c6011540d836ad8&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_145021.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061150Z&X-Amz-Expires=3600&X-Amz-Signature=0586e02616b790fc094e704855fa9ee00df155719ee97e0b3d52ed47c612b213&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG_20251226_112905.jpg (1309.4KB)
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_123317.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061151Z&X-Amz-Expires=3600&X-Amz-Signature=f63c4cc988c46b5a8d5e0a8e5c80f64c1beeca642443d55b38ec0a84a51ecd2c&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_131610.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061151Z&X-Amz-Expires=3600&X-Amz-Signature=bb71aac9fcfc666362030612c092aa610780a60280fca3f376e4bdf3098e467a&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_114900.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061152Z&X-Amz-Expires=3600&X-Amz-Signature=a583a36c997e436a7ca06287c69c33022b1344cc858ebf90082883d0489c84af&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG_20251226_131712.jpg (3710.6KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_114855.jpg (5303.6KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_145021.jpg (3565.3KB)
+content.js:6 Content script received message: {action: 'newVideoLink', link: {…}}
+content.js:10 New video link detected: {url: 'https://storage.0bb4cf9e55f7385ec61340fc7583629d.r…me%3D%22VID_20251226_123652.mp4%22&x-id=GetObject', type: 'MP4', quality: null, source: 'Network Request', timestamp: 1766815918355}
+mockApi.ts:462 ✓ Fetched VID_20251226_123652.mp4 (6305.4KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_123317.jpg (4693.7KB)
+mockApi.ts:462 ✓ Fetched IMG20251226131720_BURST000_COVER.jpg (3428.5KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_114900.jpg (4839.5KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_131610.jpg (5263.5KB)
+mockApi.ts:480 ❌ Batch 14 failed: Batch 14 timeout after 120s
+downloadFolderAsZip @ mockApi.ts:480Understand this error
+mockApi.ts:487 🗜️ Batch 14/20: Adding files to zip...
+mockApi.ts:524 ✅ Batch 14/20 complete. Progress: 130/195 files added.
+mockApi.ts:448 📥 Batch 15/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 15 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_112528.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061349Z&X-Amz-Expires=3600&X-Amz-Signature=3d5b10f3efe20f051192b3ae4d7644fd3043a284620e52a1054ab2af855ccdf3&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/VID_20251226_123818.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061349Z&X-Amz-Expires=3600&X-Amz-Signature=75901b25ec536b077f01d3695ace5229bad3ef2f584dab9961944fe659f02a61&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_145020.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061349Z&X-Amz-Expires=3600&X-Amz-Signature=2fb0f4ebde6b72be10b21dc2db4139e9ba0775216d01566ac9a70aed73efcfe9&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_112908.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061349Z&X-Amz-Expires=3600&X-Amz-Signature=6154915d05702f38ef2630d6d6d2895341ce25a6c4b0ab20a538f48740227478&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_112507.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061350Z&X-Amz-Expires=3600&X-Amz-Signature=dcfe0dfc9500fa178634c756614167be2650ffe318705ac67a11179ff3297825&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_131714.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061350Z&X-Amz-Expires=3600&X-Amz-Signature=f959c4dd8af208da8257da2e5c03398092ee7bf2a5de0e68803c98cf06fe6793&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_102153.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061350Z&X-Amz-Expires=3600&X-Amz-Signature=b0869f6e2d3fd6d745a1ef9f255cd07363d736c07db280ace25b5bce7cfe7001&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/VID_20251226_123413.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061351Z&X-Amz-Expires=3600&X-Amz-Signature=96a11e88808a1f0aea53e0bbaaefa21f26209e40f13c0f1e39838a26b9d76539&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_112509.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061351Z&X-Amz-Expires=3600&X-Amz-Signature=e9fd79c194b74647e91e459088952d02221a1e9fbdeab393573f7eb563292548&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_112438.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061352Z&X-Amz-Expires=3600&X-Amz-Signature=9bbe88e9b69bf79bd8362e4a02d4f03d31e094a8df2e03882cd0dbd4fd043d33&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG_20251226_112908.jpg (1343.5KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_112528.jpg (6437.7KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_102153.jpg (1280.2KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_112507.jpg (6499.0KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_145020.jpg (2968.1KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_131714.jpg (3269.2KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_112438.jpg (6905.7KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_112509.jpg (6860.7KB)
+content.js:6 Content script received message: {action: 'newVideoLink', link: {…}}
+content.js:10 New video link detected: {url: 'https://storage.0bb4cf9e55f7385ec61340fc7583629d.r…me%3D%22VID_20251226_123818.mp4%22&x-id=GetObject', type: 'MP4', quality: null, source: 'Network Request', timestamp: 1766816057446}
+mockApi.ts:462 ✓ Fetched VID_20251226_123818.mp4 (27053.4KB)
+content.js:6 Content script received message: {action: 'newVideoLink', link: {…}}
+content.js:10 New video link detected: {url: 'https://storage.0bb4cf9e55f7385ec61340fc7583629d.r…me%3D%22VID_20251226_123413.mp4%22&x-id=GetObject', type: 'MP4', quality: null, source: 'Network Request', timestamp: 1766816094875}
+mockApi.ts:462 ✓ Fetched VID_20251226_123413.mp4 (78622.3KB)
+mockApi.ts:478 ✅ Batch 15 fetch complete!
+mockApi.ts:487 🗜️ Batch 15/20: Adding files to zip...
+mockApi.ts:509 ⚠️ Duplicate filename detected. Renaming IMG_20251226_145020.jpg → IMG_20251226_145020_1.jpg
+downloadFolderAsZip @ mockApi.ts:509Understand this warning
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_145020_1.jpg
+mockApi.ts:509 ⚠️ Duplicate filename detected. Renaming IMG_20251226_131714.jpg → IMG_20251226_131714_1.jpg
+downloadFolderAsZip @ mockApi.ts:509Understand this warning
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_131714_1.jpg
+mockApi.ts:515 ✓ Added to zip: VID_20251226_123413.mp4
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_102153.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_112438.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_112908.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_112507.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_112509.jpg
+mockApi.ts:515 ✓ Added to zip: VID_20251226_123818.mp4
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_112528.jpg
+mockApi.ts:524 ✅ Batch 15/20 complete. Progress: 140/195 files added.
+mockApi.ts:448 📥 Batch 16/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 16 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_101044.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061502Z&X-Amz-Expires=3600&X-Amz-Signature=fecb6cbc5cea71459a1b94f6d89b02aeee71cd6179f41b04e77f62a948b4e9d2&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_112440.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061502Z&X-Amz-Expires=3600&X-Amz-Signature=b108cdf1a02793b22102e4fe8da89df93bff8ad72c21c52fc9d13329ff20d163&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_101118.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061503Z&X-Amz-Expires=3600&X-Amz-Signature=75f80c9b9be3f38809f7430d1efe1798fb7a192391e3bb89ce2c54f69d0d6bf8&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_101054.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061503Z&X-Amz-Expires=3600&X-Amz-Signature=085b8639e10f4e257a08e3ca21db5e874302a6bd937962b37158dea018f52324&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100520.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061503Z&X-Amz-Expires=3600&X-Amz-Signature=ec6113ba1a469035c49c12fb1f7df7d14c5631382d5d42220a6d8f725e069f72&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_101122.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061503Z&X-Amz-Expires=3600&X-Amz-Signature=629396565bc80596110c9cbad4966388d78e29433194e2e1e7aa3753be609807&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_112456.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061504Z&X-Amz-Expires=3600&X-Amz-Signature=b353deaa691c1ce65f374837b5eb25689c195cb8e7c4a301a3441651ceaf10cd&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG_20251226_101044.jpg (1428.8KB)
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_112457.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061504Z&X-Amz-Expires=3600&X-Amz-Signature=b07d99220b86726615a9f40ee52730ae1c15d1bf91d72e4e770e906d85c6b9dc&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_101022.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061504Z&X-Amz-Expires=3600&X-Amz-Signature=2493396629dc4e19fafb1640786e98e45a244c5640976108043d3259aaab2df0&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_112527.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061505Z&X-Amz-Expires=3600&X-Amz-Signature=6be666d6444cefd56c6b7042f9fa05efcc5bf18c7da6a9a5cbb8159872a1e025&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG_20251226_100520.jpg (1148.6KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_101118.jpg (1360.7KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_101054.jpg (1582.7KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_101122.jpg (1315.3KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_101022.jpg (1383.8KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_112456.jpg (5133.1KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_112440.jpg (6770.0KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_112457.jpg (6403.4KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_112527.jpg (6756.5KB)
+mockApi.ts:478 ✅ Batch 16 fetch complete!
+mockApi.ts:487 🗜️ Batch 16/20: Adding files to zip...
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_101022.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_112456.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_101122.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_112457.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_112527.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_101118.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_101044.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_112440.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_101054.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100520.jpg
+mockApi.ts:524 ✅ Batch 16/20 complete. Progress: 150/195 files added.
+mockApi.ts:448 📥 Batch 17/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 17 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100353.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061520Z&X-Amz-Expires=3600&X-Amz-Signature=477e9cfa3859edfeb7932732189d349466ec4bb37b46d97fa17a5548babc0bc8&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100806.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061520Z&X-Amz-Expires=3600&X-Amz-Signature=9937da0e0b3cba9225258a5a610b4b6f98352f4dcda07427e9b445c7b17f330b&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_101020.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061521Z&X-Amz-Expires=3600&X-Amz-Signature=71b4870f95b5112c926ee5edb5b6b7fbee4b2546ffcfadeab70af518a8126408&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/VID_20251226_105119.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061521Z&X-Amz-Expires=3600&X-Amz-Signature=fa4aeaf1fae4cc57eb041b6fb506c30c4bed89176cf2c8e9e3ff4c1fe69a514e&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100144.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061521Z&X-Amz-Expires=3600&X-Amz-Signature=c8dba12586efca1bacf32cc69b12dbf057534052d3c815189ed17128856e6bac&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100637.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061522Z&X-Amz-Expires=3600&X-Amz-Signature=d35c1fa43861b47cfca37db272743946603a15071ee7477fd0db01412776d8f5&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100812.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061522Z&X-Amz-Expires=3600&X-Amz-Signature=6a54abb77c9cb5f2fd7f4d4f767cfae2f7687244015c316e8982f646203e9617&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/VID_20251226_105207.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061522Z&X-Amz-Expires=3600&X-Amz-Signature=71ad9431fa244d34fdc488c436a1461342a956fd165b930f43a3cab1ea6de158&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100132.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061523Z&X-Amz-Expires=3600&X-Amz-Signature=39d1c882f4f0ae8a6fa2dac57b9aaa8af165ef13777d26760bbef58a4f278af7&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG_20251226_100353.jpg (1459.4KB)
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100216.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061523Z&X-Amz-Expires=3600&X-Amz-Signature=95308f4f1e5a904171e4750e114938c282b93183b251cb90c6d9b175636dfe17&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG_20251226_100806.jpg (1417.1KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_101020.jpg (1344.8KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_100812.jpg (1066.2KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_100144.jpg (1792.9KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_100132.jpg (1799.8KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_100637.jpg (1370.2KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_100216.jpg (1479.6KB)
+content.js:6 Content script received message: {action: 'newVideoLink', link: {…}}
+content.js:10 New video link detected: {url: 'https://storage.0bb4cf9e55f7385ec61340fc7583629d.r…me%3D%22VID_20251226_105119.mp4%22&x-id=GetObject', type: 'MP4', quality: null, source: 'Network Request', timestamp: 1766816132673}
+mockApi.ts:462 ✓ Fetched VID_20251226_105119.mp4 (10722.3KB)
+content.js:6 Content script received message: {action: 'newVideoLink', link: {…}}
+content.js:10 New video link detected: {url: 'https://storage.0bb4cf9e55f7385ec61340fc7583629d.r…me%3D%22VID_20251226_132915.mp4%22&x-id=GetObject', type: 'MP4', quality: null, source: 'Network Request', timestamp: 1766816161107}
+mockApi.ts:462 ✓ Fetched VID_20251226_132915.mp4 (552433.0KB)
+content.js:6 Content script received message: {action: 'newVideoLink', link: {…}}
+content.js:10 New video link detected: {url: 'https://storage.0bb4cf9e55f7385ec61340fc7583629d.r…me%3D%22VID_20251226_105207.mp4%22&x-id=GetObject', type: 'MP4', quality: null, source: 'Network Request', timestamp: 1766816162402}
+mockApi.ts:462 ✓ Fetched VID_20251226_105207.mp4 (62395.8KB)
+mockApi.ts:478 ✅ Batch 17 fetch complete!
+mockApi.ts:487 🗜️ Batch 17/20: Adding files to zip...
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100812.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100353.jpg
+mockApi.ts:515 ✓ Added to zip: VID_20251226_105207.mp4
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100806.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100132.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_101020.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100637.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100144.jpg
+mockApi.ts:515 ✓ Added to zip: VID_20251226_105119.mp4
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100216.jpg
+mockApi.ts:524 ✅ Batch 17/20 complete. Progress: 160/195 files added.
+mockApi.ts:448 📥 Batch 18/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 18 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_111043630.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061606Z&X-Amz-Expires=3600&X-Amz-Signature=6f923e0ff68f5fc0c15bdd78604f3317f1bb91155f6b10d05ff2cb32d1482af1&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100707.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061607Z&X-Amz-Expires=3600&X-Amz-Signature=dd919f6125a488aa382d6c9ec9a22cf21635e4d12372c9b6d802541a2866972f&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100409.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061607Z&X-Amz-Expires=3600&X-Amz-Signature=60dc308535afc4e390976a2996cec00527cb9cb7a76dec545d0be2b960dee82a&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/VID_20251226_123838.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061607Z&X-Amz-Expires=3600&X-Amz-Signature=f0f1876df017093b9ef72fa567d2c675a31dcc8f8c4a47a1fd052e95a119db60&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/VID_20251226_105010.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061607Z&X-Amz-Expires=3600&X-Amz-Signature=d5b258fed41f20325de76f9f3200f518d0294d1706fbc643eac0b08e9fc408ef&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100518.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061608Z&X-Amz-Expires=3600&X-Amz-Signature=36ea5054bc99ccedbdfac235239851dc579a7e4f1306ddc78db5ce1ed49f6c63&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100431.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061608Z&X-Amz-Expires=3600&X-Amz-Signature=ed736660d682226a943ae2ebb016389eeae8392419d020d8412143044db7f365&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100524.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061608Z&X-Amz-Expires=3600&X-Amz-Signature=33a1528447306fd6f7461b5a9169cac449dda5dcea16758ec6660f7628011cb4&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100139.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061609Z&X-Amz-Expires=3600&X-Amz-Signature=5310535d19bc939d0de1bcb1e3dcd360455e84f1338be80a81f3e0801693d494&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG_20251226_100409.jpg (1295.1KB)
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100209.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061609Z&X-Amz-Expires=3600&X-Amz-Signature=7d327cfaa97fec27d6da8e080d11f1c79e868733501250768988b72ecfd12411&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG_20251226_100707.jpg (1293.8KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_100518.jpg (1450.1KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_100431.jpg (1442.9KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_100139.jpg (1827.8KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_100524.jpg (1466.7KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_100209.jpg (1238.7KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_111043630.jpg (7785.3KB)
+content.js:6 Content script received message: {action: 'newVideoLink', link: {…}}
+content.js:10 New video link detected: {url: 'https://storage.0bb4cf9e55f7385ec61340fc7583629d.r…me%3D%22VID_20251226_123838.mp4%22&x-id=GetObject', type: 'MP4', quality: null, source: 'Network Request', timestamp: 1766816195338}
+mockApi.ts:462 ✓ Fetched VID_20251226_123838.mp4 (32705.1KB)
+content.js:6 Content script received message: {action: 'newVideoLink', link: {…}}
+content.js:10 New video link detected: {url: 'https://storage.0bb4cf9e55f7385ec61340fc7583629d.r…me%3D%22VID_20251226_105010.mp4%22&x-id=GetObject', type: 'MP4', quality: null, source: 'Network Request', timestamp: 1766816200536}
+mockApi.ts:462 ✓ Fetched VID_20251226_105010.mp4 (55091.9KB)
+mockApi.ts:478 ✅ Batch 18 fetch complete!
+mockApi.ts:487 🗜️ Batch 18/20: Adding files to zip...
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100518.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100524.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100209.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100139.jpg
+mockApi.ts:515 ✓ Added to zip: VID_20251226_105010.mp4
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100409.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100431.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_111043630.jpg
+mockApi.ts:515 ✓ Added to zip: VID_20251226_123838.mp4
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100707.jpg
+mockApi.ts:524 ✅ Batch 18/20 complete. Progress: 170/195 files added.
+mockApi.ts:448 📥 Batch 19/20: Fetching 10 files...
+mockApi.ts:476 ⏳ Waiting for batch 19 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_112431.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061646Z&X-Amz-Expires=3600&X-Amz-Signature=b238c4e981b37bac10bd1aa8b61a8db37ec61ea96df07380a29c67be76d42f8f&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100434.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061646Z&X-Amz-Expires=3600&X-Amz-Signature=d01ebc53bd76a54a35f3b8a519a51e6de26cababc3b5c521cce9c5b1cac30499&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_110117.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061647Z&X-Amz-Expires=3600&X-Amz-Signature=f96379eb0fcf721207c8c837f7a9173e27a940b25069393824a6a70a8c54b445&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100420.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061647Z&X-Amz-Expires=3600&X-Amz-Signature=0448c95c8786b6cb7d8b389b3e8ad1d5ce9b241b7c386e0f980f990ac4069044&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100407.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061647Z&X-Amz-Expires=3600&X-Amz-Signature=121bf481e7c27c049f33c9b184c94fbba7761da2ab842c985c334b101d74a6c6&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_113206073.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061647Z&X-Amz-Expires=3600&X-Amz-Signature=6375fd5641a229037c91b611743870d5e9f4a9a29f295f2b6dcdea6d12f81bc6&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100214.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061648Z&X-Amz-Expires=3600&X-Amz-Signature=0dda3e398203ff7eb2ee8bc4a2e6b0add39bc1a6a06cbba5d160d7a09fd4f445&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG_20251226_100420.jpg (1532.9KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_100407.jpg (1321.5KB)
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_090812149.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061650Z&X-Amz-Expires=3600&X-Amz-Signature=cf30fa172801c435af8d815161cd001f9815cee55a41be936b446fa6f07505b1&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG_20251226_100434.jpg (1450.1KB)
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG20251226105534.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061651Z&X-Amz-Expires=3600&X-Amz-Signature=93b50ccd61885f521b8a893908e7c60c2c72d44a01b4681bf0efdc98a777560f&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_110303211.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061651Z&X-Amz-Expires=3600&X-Amz-Signature=1e593b442cf6f7924501678354b810445c381815647db6c12707d350964bfb21&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG_20251226_112431.jpg (7579.2KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_110117.jpg (7167.9KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_090812149.jpg (5092.0KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_100214.jpg (1471.1KB)
+mockApi.ts:462 ✓ Fetched IMG20251226105534.jpg (7201.9KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_110303211.jpg (7456.7KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_113206073.jpg (7060.9KB)
+mockApi.ts:478 ✅ Batch 19 fetch complete!
+mockApi.ts:487 🗜️ Batch 19/20: Adding files to zip...
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100407.jpg
+mockApi.ts:509 ⚠️ Duplicate filename detected. Renaming RIYAN_20251226_113206073.jpg → RIYAN_20251226_113206073_1.jpg
+downloadFolderAsZip @ mockApi.ts:509Understand this warning
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_113206073_1.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100214.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_112431.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_090812149.jpg
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_110303211.jpg
+mockApi.ts:515 ✓ Added to zip: IMG20251226105534.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_110117.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100420.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100434.jpg
+mockApi.ts:524 ✅ Batch 19/20 complete. Progress: 180/195 files added.
+mockApi.ts:448 📥 Batch 20/20: Fetching 5 files...
+mockApi.ts:476 ⏳ Waiting for batch 20 to complete...
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100942.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061703Z&X-Amz-Expires=3600&X-Amz-Signature=9971dccdd2f87a01bba89f3bb54e9296a3a39056e659f043ae86612344431878&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100801.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061703Z&X-Amz-Expires=3600&X-Amz-Signature=aac2e9f42b9768efce604b0cb55c15169e9a8c49d0c23da42febbe8ec02825aa&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 4 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/RIYAN_20251226_105539606.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061703Z&X-Amz-Expires=3600&X-Amz-Signature=116b961fd892ad275c5dd3f5e737ec099c2bf1bc223e4664927e86ce941cf54e&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100940.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061703Z&X-Amz-Expires=3600&X-Amz-Signature=66a82fbc99ab1278a33f516f77617a817b9a66a5b3c17680f5fc1e0868303f07&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG_20251226_100942.jpg (1363.7KB)
+mockApi.ts:1229 MockStore: Before download - downloads_done: 3 download_limit: null
+mockApi.ts:1249 Generated pre-signed URL: https://storage.0bb4cf9e55f7385ec61340fc7583629d.r2.cloudflarestorage.com/uploads/UL3IIU/IMG_20251226_100411.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=6c8b35b77917ddeb515272d481ef090c%2F20251227%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251227T061704Z&X-Amz-Expires=3600&X-Amz-Signature=60b4dbb99fe8748fa4dd6dd0dc44e6966b284c2cfa101cb6985d55ece96c3a34&X-Amz-SignedHeaders=host&response-cache-control=public%2C%20max-age%3D3600&x-id=GetObject
+mockApi.ts:462 ✓ Fetched IMG_20251226_100801.jpg (1401.8KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_100940.jpg (1309.7KB)
+mockApi.ts:462 ✓ Fetched IMG_20251226_100411.jpg (1328.2KB)
+mockApi.ts:462 ✓ Fetched RIYAN_20251226_105539606.jpg (8015.4KB)
+mockApi.ts:478 ✅ Batch 20 fetch complete!
+mockApi.ts:487 🗜️ Batch 20/20: Adding files to zip...
+mockApi.ts:515 ✓ Added to zip: RIYAN_20251226_105539606.jpg
+mockApi.ts:509 ⚠️ Duplicate filename detected. Renaming IMG_20251226_100801.jpg → IMG_20251226_100801_1.jpg
+downloadFolderAsZip @ mockApi.ts:509Understand this warning
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100801_1.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100411.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100940.jpg
+mockApi.ts:515 ✓ Added to zip: IMG_20251226_100942.jpg
+mockApi.ts:524 ✅ Batch 20/20 complete. Progress: 185/195 files added.
+mockApi.ts:534 🎉 Successfully added 185/195 files to zip.
+mockApi.ts:547 🔒 Finalizing zip file...
+mockApi.ts:551 ✅ Zip created successfully! Size: 1676.27MB
+mockApi.ts:561 💾 Large file detected (1676.27MB). Uploading to R2 for reliable download...

@@ -287,7 +287,11 @@ export const deleteFolder = async (folderId: string): Promise<void> => {
 
 
 // --- ZIP DOWNLOAD ---
-export const downloadFolderAsZip = async (folderId: string, tokenStr: string): Promise<string> => {
+export const downloadFolderAsZip = async (
+  folderId: string,
+  tokenStr: string,
+  onProgress?: (current: number, total: number, status: string) => void
+): Promise<string> => {
   // 1. Validate Access
   const tokenRecord = await validateToken(tokenStr);
   const isMaster = (await sha256Hex(tokenStr)) === MASTER_TOKEN_HASH;
@@ -350,6 +354,7 @@ export const downloadFolderAsZip = async (folderId: string, tokenStr: string): P
       // If successful (no error thrown), it exists. Return Signed URL.
       if (header) {
         console.log("⚡ SPEED: Cache HIT for Zip:", zipCacheKey);
+        onProgress?.(1, 1, 'Using cached archive');
         const command = new GetObjectCommand({
           Bucket: R2_BUCKET_NAME,
           Key: zipCacheKey,
@@ -382,6 +387,8 @@ export const downloadFolderAsZip = async (folderId: string, tokenStr: string): P
     throw new Error("No files found in this folder.");
   }
 
+  console.log(`📦 Starting zip creation for ${filesInFolder.length} files...`);
+
   // 2. Prepare Zip
   const zipWriter = new ZipWriter(new BlobWriter("application/zip"), {
     password: folderPassword
@@ -390,38 +397,144 @@ export const downloadFolderAsZip = async (folderId: string, tokenStr: string): P
   let successfulAdds = 0;
   let lastError: Error | null = null;
 
-  try {
-    // PARALLEL BATCH PROCESSING (Optimize 1st Zip Speed)
-    const BATCH_SIZE = 10;
+  // Helper function to fetch with timeout
+  const fetchWithTimeout = async (url: string, timeoutMs: number = 30000): Promise<Response> => {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
 
-    for (let i = 0; i < filesInFolder.length; i += BATCH_SIZE) {
-      const batch = filesInFolder.slice(i, i + BATCH_SIZE);
-      console.log(`Zipping: Processing batch ${i / BATCH_SIZE + 1} (${batch.length} files)...`);
+    try {
+      const response = await fetch(url, { signal: controller.signal });
+      clearTimeout(timeoutId);
+      return response;
+    } catch (err: any) {
+      clearTimeout(timeoutId);
+      if (err.name === 'AbortError') {
+        throw new Error(`Request timeout after ${timeoutMs / 1000}s`);
+      }
+      throw err;
+    }
+  };
 
-      // Fetch all files in batch simultaneously
-      const batchResults = await Promise.all(batch.map(async (file) => {
-        try {
-          // Pass incrementUsage: false because we already incremented for the "Zip Action" above
-          const { url } = await downloadFile(file.file_id, tokenStr, '127.0.0.1', false); // Get signed URL
-          const response = await fetch(url);
-          if (!response.ok) throw new Error(`HTTP ${response.status}`);
-          const blob = await response.blob();
-          return { file, blob };
-        } catch (err: any) {
-          console.error(`Failed to fetch ${file.original_name}:`, err);
-          lastError = err;
-          return null;
-        }
-      }));
-
-      // Add to Zip (Sequentially to avoid zip writer race conditions)
-      for (const res of batchResults) {
-        if (res) {
-          await zipWriter.add(res.file.original_name, new BlobReader(res.blob));
-          successfulAdds++;
-          console.log(`Zipping: Added ${res.file.original_name}`);
+  // Helper function to fetch with retry logic
+  const fetchWithRetry = async (url: string, maxRetries: number = 3): Promise<Response> => {
+    let lastError: Error | null = null;
+    for (let attempt = 1; attempt <= maxRetries; attempt++) {
+      try {
+        const response = await fetchWithTimeout(url, 30000);
+        if (response.ok) return response;
+        lastError = new Error(`HTTP ${response.status}`);
+      } catch (err: any) {
+        lastError = err;
+        if (attempt < maxRetries) {
+          console.warn(`Retry ${attempt}/${maxRetries} for ${url.substring(0, 50)}...`);
+          await new Promise(r => setTimeout(r, 1000 * attempt)); // Exponential backoff
         }
       }
+    }
+    throw lastError || new Error('Fetch failed after retries');
+  };
+
+  // PARALLEL BATCH PROCESSING (Optimize 1st Zip Speed)
+  const BATCH_SIZE = 10;
+  const totalBatches = Math.ceil(filesInFolder.length / BATCH_SIZE);
+
+  // Track filenames across ALL batches to handle duplicates
+  const addedFilenames = new Set<string>();
+
+  try {
+    for (let i = 0; i < filesInFolder.length; i += BATCH_SIZE) {
+      const batch = filesInFolder.slice(i, i + BATCH_SIZE);
+      const batchNum = Math.floor(i / BATCH_SIZE) + 1;
+      console.log(`📥 Batch ${batchNum}/${totalBatches}: Fetching ${batch.length} files...`);
+
+      // Report progress: Fetching batch
+      onProgress?.(batchNum, totalBatches, `Fetching batch ${batchNum}/${totalBatches}`);
+
+      // Fetch all files in batch simultaneously with overall timeout
+      let batchResults;
+      try {
+        const fetchPromise = Promise.all(batch.map(async (file) => {
+          try {
+            // Pass incrementUsage: false because we already incremented for the "Zip Action" above
+            const { url } = await downloadFile(file.file_id, tokenStr, '127.0.0.1', false); // Get signed URL
+            const response = await fetchWithRetry(url, 3); // Retry up to 3 times
+            const blob = await response.blob();
+            console.log(`✓ Fetched ${file.original_name} (${(blob.size / 1024).toFixed(1)}KB)`);
+            return { file, blob };
+          } catch (err: any) {
+            console.error(`✗ Failed to fetch ${file.original_name} after retries:`, err.message);
+            lastError = err;
+            return null;
+          }
+        }));
+
+        // Calculate dynamic timeout based on largest file in batch
+        // Base timeout: 120s for normal files
+        // Large files (>100MB): add 1 second per MB, max 300s total
+        const maxFileSize = Math.max(...batch.map(f => f.size || 0));
+        const maxFileSizeMB = maxFileSize / (1024 * 1024);
+        let batchTimeout = 120000; // 120 seconds default
+
+        if (maxFileSizeMB > 100) {
+          // For files over 100MB, add extra time: 1 second per MB over 100MB
+          const extraSeconds = Math.min(180, Math.ceil(maxFileSizeMB - 100)); // Max 180 extra seconds
+          batchTimeout = (120 + extraSeconds) * 1000;
+          console.log(`⏱️ Large file detected (${maxFileSizeMB.toFixed(1)}MB), using ${(batchTimeout / 1000)}s timeout`);
+        }
+
+        const timeoutPromise = new Promise((_, reject) =>
+          setTimeout(() => reject(new Error(`Batch ${batchNum} timeout after ${batchTimeout / 1000}s`)), batchTimeout)
+        );
+
+        console.log(`⏳ Waiting for batch ${batchNum} to complete...`);
+        batchResults = await Promise.race([fetchPromise, timeoutPromise]) as any[];
+        console.log(`✅ Batch ${batchNum} fetch complete!`);
+      } catch (err: any) {
+        console.error(`❌ Batch ${batchNum} failed:`, err.message);
+        // Create empty results for this batch and continue
+        batchResults = batch.map(() => null);
+        lastError = err;
+      }
+
+      // Add to Zip (Sequentially to avoid zip writer race conditions)
+      console.log(`🗜️ Batch ${batchNum}/${totalBatches}: Adding files to zip...`);
+
+      // Report progress: Adding to zip
+      onProgress?.(batchNum, totalBatches, `Adding batch ${batchNum}/${totalBatches} to archive`);
+
+      for (const res of batchResults) {
+        if (res) {
+          try {
+            let filename = res.file.original_name;
+
+            // Handle duplicate filenames by appending a counter
+            if (addedFilenames.has(filename)) {
+              const nameParts = filename.split('.');
+              const ext = nameParts.length > 1 ? '.' + nameParts.pop() : '';
+              const baseName = nameParts.join('.');
+              let counter = 1;
+
+              // Find an available filename
+              while (addedFilenames.has(`${baseName}_${counter}${ext}`)) {
+                counter++;
+              }
+              filename = `${baseName}_${counter}${ext}`;
+              console.warn(`⚠️ Duplicate filename detected. Renaming ${res.file.original_name} → ${filename}`);
+            }
+
+            await zipWriter.add(filename, new BlobReader(res.blob));
+            addedFilenames.add(filename);
+            successfulAdds++;
+            console.log(`✓ Added to zip: ${filename}`);
+          } catch (err: any) {
+            console.error(`✗ Failed to add ${res.file.original_name} to zip:`, err.message);
+            lastError = err;
+            // Continue with other files instead of failing completely
+          }
+        }
+      }
+
+      console.log(`✅ Batch ${batchNum}/${totalBatches} complete. Progress: ${successfulAdds}/${filesInFolder.length} files added.`);
     }
 
     if (successfulAdds === 0) {
@@ -431,20 +544,35 @@ export const downloadFolderAsZip = async (folderId: string, tokenStr: string): P
       throw new Error(lastError ? lastError.message : "Failed to add any files to the zip archive. Possible CORS or Network issue.");
     }
 
-  } finally {
-    // Ensure we close if any partially added
+    console.log(`🎉 Successfully added ${successfulAdds}/${filesInFolder.length} files to zip.`);
+
+  } catch (err: any) {
+    // Make sure to close the zip writer even on error
+    try {
+      await zipWriter.close();
+    } catch (e) {
+      // Ignore close errors
+    }
+    throw err;
   }
 
   // zipWriter.close() returns the Blob
+  console.log(`🔒 Finalizing zip file...`);
+  onProgress?.(totalBatches, totalBatches, 'Finalizing archive...');
   const zipBlob = await zipWriter.close();
+  const zipSizeMB = (zipBlob.size / (1024 * 1024)).toFixed(2);
+  console.log(`✅ Zip created successfully! Size: ${zipSizeMB}MB`);
 
   // --- SAVE TO CACHE (Start) ---
-  if (!USE_MOCK && r2Client && R2_BUCKET_NAME) {
+  // For large files (>100MB), ALWAYS save to R2 and return R2 URL (blob URLs fail for large files)
+  // For smaller files (<100MB), optionally cache to R2 for speed
+  const LARGE_FILE_THRESHOLD = 100 * 1024 * 1024; // 100MB
+  const isLargeFile = zipBlob.size >= LARGE_FILE_THRESHOLD;
+
+  if (!USE_MOCK && r2Client && R2_BUCKET_NAME && isLargeFile) {
     try {
-      console.log("💾 Caching Generated Zip to R2...");
-      // We need to convert Blob to something uploadable (Buffer/Stream for Node, but here we are client-side so Blob is fine depending on environment)
-      // Warning: 'zipBlob' is a Blob. AWS SDK v3 in browser usually takes Blob/Buffer. 
-      // Since this code runs in browser (mostly), Blob is fine.
+      console.log(`💾 Large file detected (${zipSizeMB}MB). Uploading to R2 for reliable download...`);
+      onProgress?.(totalBatches, totalBatches, `Uploading ${zipSizeMB}MB to storage...`);
 
       const uploadCommand = new PutObjectCommand({
         Bucket: R2_BUCKET_NAME,
@@ -453,26 +581,65 @@ export const downloadFolderAsZip = async (folderId: string, tokenStr: string): P
         ContentType: 'application/zip'
       });
 
-      // We can't upload large files directly from browser without Presigned URL usually due to CORS/Auth.
-      // BUT logic here for 'r2Client' implies it's initialized with credentials?
-      // Note: lines 23-29 usage of VITE_ env vars suggests this is CLIENT SIDE.
-      // Security Risk aside (user keys in client), we can use the client directly if it works.
-      // Or used presigned URL loop.
-
-      // Let's reuse the presigned URL upload pattern from uploadFile
       const signedUrl = await getSignedUrl(r2Client, uploadCommand, { expiresIn: 3600 });
-      await fetch(signedUrl, {
+
+      // Upload the zip blob to R2 using the signed URL
+      const cacheResponse = await fetch(signedUrl, {
         method: 'PUT',
         body: zipBlob,
         headers: { 'Content-Type': 'application/zip' }
       });
-      console.log("✅ Zip Cached Successfully!");
-    } catch (e) {
-      console.warn("Failed to cache zip (non-fatal):", e);
+
+      if (cacheResponse.ok) {
+        console.log("✅ Large zip uploaded to R2 successfully!");
+
+        // Return R2 download URL instead of blob URL
+        const downloadCommand = new GetObjectCommand({
+          Bucket: R2_BUCKET_NAME,
+          Key: zipCacheKey,
+          ResponseContentDisposition: `attachment; filename="${folderId}.zip"`,
+        });
+        const downloadUrl = await getSignedUrl(r2Client, downloadCommand, { expiresIn: 3600 });
+        console.log("🎁 Returning R2 download URL for large file...");
+        return downloadUrl;
+      } else {
+        console.warn(`⚠️ R2 upload failed: HTTP ${cacheResponse.status}. Falling back to blob URL...`);
+      }
+    } catch (e: any) {
+      console.warn("⚠️ Failed to upload large file to R2 (falling back to blob URL):", e.message);
+    }
+  } else if (!USE_MOCK && r2Client && R2_BUCKET_NAME && zipBlob.size < LARGE_FILE_THRESHOLD) {
+    // For smaller files, optionally cache for speed
+    try {
+      console.log(`💾 Caching zip to R2 (${zipSizeMB}MB)...`);
+      const uploadCommand = new PutObjectCommand({
+        Bucket: R2_BUCKET_NAME,
+        Key: zipCacheKey,
+        Body: zipBlob,
+        ContentType: 'application/zip'
+      });
+
+      const signedUrl = await getSignedUrl(r2Client, uploadCommand, { expiresIn: 3600 });
+
+      // Upload the zip blob to R2 using the signed URL
+      const cacheResponse = await fetch(signedUrl, {
+        method: 'PUT',
+        body: zipBlob,
+        headers: { 'Content-Type': 'application/zip' }
+      });
+
+      if (cacheResponse.ok) {
+        console.log("✅ Zip cached successfully to R2!");
+      } else {
+        console.warn(`⚠️ Cache upload failed: HTTP ${cacheResponse.status}`);
+      }
+    } catch (e: any) {
+      console.warn("⚠️ Failed to cache zip (non-fatal):", e.message);
     }
   }
   // --- SAVE TO CACHE (End) ---
 
+  console.log(`🎁 Returning download URL...`);
   return URL.createObjectURL(zipBlob);
 };
 
@@ -1089,6 +1256,7 @@ export const downloadFile = async (fileId: string, tokenStr: string, ip: string,
     const command = new GetObjectCommand({
       Bucket: R2_BUCKET_NAME,
       Key: file.r2_path,
+      ResponseCacheControl: 'public, max-age=3600',
     });
     downloadUrl = await getSignedUrl(r2Client, command, { expiresIn: 3600 });
     console.log('Generated pre-signed URL:', downloadUrl); // URL expires in 1 hour
@@ -1166,6 +1334,7 @@ export const downloadFile = async (fileId: string, tokenStr: string, ip: string,
       Bucket: R2_BUCKET_NAME,
       Key: file.r2_path,
       ResponseContentDisposition: `attachment; filename="${encodeURIComponent(file.title || file.original_name)}"`,
+      ResponseCacheControl: 'public, max-age=300',
     });
     const url = await getSignedUrl(r2Client, command, { expiresIn: 300 });
 
@@ -1173,6 +1342,7 @@ export const downloadFile = async (fileId: string, tokenStr: string, ip: string,
       const previewCommand = new GetObjectCommand({
         Bucket: R2_BUCKET_NAME,
         Key: file.r2_path,
+        ResponseCacheControl: 'public, max-age=300',
       });
       previewUrl = await getSignedUrl(r2Client, previewCommand, { expiresIn: 300 });
     }

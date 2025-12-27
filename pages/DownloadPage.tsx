@@ -29,13 +29,18 @@ const DownloadPage: React.FC = () => {
         const { url } = await downloadFile(fileId, token, '127.0.0.1');
         window.open(url, '_blank');
       } else {
-        const blobUrl = await downloadFolderAsZip(folderId, token, zipPassword || undefined);
+        const blobUrl = await downloadFolderAsZip(folderId, token);
         const link = document.createElement('a');
         link.href = blobUrl;
-        link.download = `archive-${folderId}.zip`;
+        // Add timestamp + random suffix to prevent "File already exists" error
+        const timestamp = Date.now();
+        const random = Math.floor(Math.random() * 1000);
+        link.download = `archive-${folderId}-${timestamp}-${random}.zip`;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
+        // Revoke blob URL after a short delay to ensure download starts
+        setTimeout(() => URL.revokeObjectURL(blobUrl), 100);
       }
     } catch (err: any) {
       setError(err.message);

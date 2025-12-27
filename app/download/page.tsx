@@ -16,6 +16,7 @@ export default function DownloadPage() {
   const [token, setToken] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [progress, setProgress] = useState({ current: 0, total: 0, status: '' });
 
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -67,24 +68,62 @@ export default function DownloadPage() {
 
     setLoading(true);
     setError('');
+    setProgress({ current: 0, total: 0, status: '' });
 
     try {
       if (mode === 'file') {
         const { url } = await downloadFile(fileId, token, '127.0.0.1');
         window.open(url, '_blank');
       } else {
-        const blobUrl = await downloadFolderAsZip(folderId, token);
-        const link = document.createElement('a');
-        link.href = blobUrl;
-        link.download = `archive-${folderId}.zip`;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        const downloadUrl = await downloadFolderAsZip(folderId, token, (current, total, status) => {
+          setProgress({ current, total, status });
+        });
+
+        // Check if it's a blob URL or R2 URL
+        const isBlobUrl = downloadUrl.startsWith('blob:');
+
+        if (isBlobUrl) {
+          // For blob URLs (smaller files), use the traditional download method
+          const link = document.createElement('a');
+          link.href = downloadUrl;
+          const timestamp = Date.now();
+          const random = Math.floor(Math.random() * 1000);
+          link.download = `archive-${folderId}-${timestamp}-${random}.zip`;
+          link.style.display = 'none';
+
+          document.body.appendChild(link);
+          link.click();
+
+          // Cleanup after delay
+          setTimeout(() => {
+            document.body.removeChild(link);
+            URL.revokeObjectURL(downloadUrl);
+          }, 5000);
+        } else {
+          // For R2 URLs (large files), use link download to avoid popup blockers
+          // The R2 URL already has the correct Content-Disposition header
+          console.log('📥 Large file detected, downloading from R2:', downloadUrl.substring(0, 100) + '...');
+
+          const link = document.createElement('a');
+          link.href = downloadUrl;
+          link.download = `archive-${folderId}.zip`; // R2 URL has Content-Disposition, but set download anyway
+          link.style.display = 'none';
+          link.target = '_blank';
+
+          document.body.appendChild(link);
+          link.click();
+
+          // Cleanup after delay
+          setTimeout(() => {
+            document.body.removeChild(link);
+          }, 1000);
+        }
       }
     } catch (err: any) {
       setError(err.message);
     } finally {
       setLoading(false);
+      setProgress({ current: 0, total: 0, status: '' });
     }
   };
 
@@ -159,13 +198,32 @@ export default function DownloadPage() {
             </div>
           )}
 
+          {/* Progress Bar */}
+          {loading && mode === 'folder' && progress.total > 0 && (
+            <div className="mb-4 space-y-2">
+              <div className="flex justify-between text-xs text-gray-400">
+                <span>{progress.status}</span>
+                <span>{Math.round((progress.current / progress.total) * 100)}%</span>
+              </div>
+              <div className="h-2 bg-white/5 rounded-full overflow-hidden">
+                <div
+                  className="h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300 ease-out"
+                  style={{ width: `${(progress.current / progress.total) * 100}%` }}
+                />
+              </div>
+              <div className="text-[10px] text-gray-500 text-center font-mono">
+                Batch {progress.current} of {progress.total}
+              </div>
+            </div>
+          )}
+
           <NeoButton
             className="w-full"
             onClick={handleDownload}
             isLoading={loading}
             disabled={(!fileId && mode === 'file') || (!folderId && mode === 'folder') || !token}
           >
-            {loading ? 'Processing...' : (mode === 'file' ? 'Download File' : 'Download Zip Archive')}
+            {loading ? (progress.total > 0 ? `Processing Batch ${progress.current}/${progress.total}...` : 'Processing...') : (mode === 'file' ? 'Download File' : 'Download Zip Archive')}
           </NeoButton>
         </div>
 
